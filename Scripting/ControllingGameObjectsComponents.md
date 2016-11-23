@@ -1,2 +1,0 @@
-# Controlling GameObjects Using Components
-
