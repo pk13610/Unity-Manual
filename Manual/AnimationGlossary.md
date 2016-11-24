@@ -1,26 +1,28 @@
-Unity Manual > Animation > A Glossary of Animation and Mecanim terms
+<!-- Unity Manual > Animation > A Glossary of Animation and Mecanim terms -->
 
-# A Glossary of Animation and Mecanim terms
+<!-- # A Glossary of Animation and Mecanim terms -->
+# 动画术语
 
-## Animation Clip terms
+<!-- ## Animation Clip terms -->
 ## 动画片段术语
 
-
+<!-- 
 Term:   | Definition:
 ------- | -----------
 Animation Clip | Animation data that can be used for animated characters or simple animations. It is a simple “unit” piece of motion, such as (one specific instance of) “Idle”, “Walk” or “Run”.
 Animation Curves | Curves can be attached to animation clips and controlled by various parameters from the game.
 Avatar | Mask A specification for which body parts to include or exclude for a skeleton. Used in Animation Layers and in the importer.
-
+ -->
 术语 | 定义
 ---- | ----
 动画片段 | 动画数据，可以用于角色动画或简单动画。它是动作的最小单位，例如闲置、行走或奔跑。
 动画曲线 | 附加到动画片段的曲线，可以在游戏中被各种参数控制。
 阿凡达 | 骨骼蒙皮，规范身体哪些部位被包含（或不包含）。用于动画层和动画导入。
 
-## Avatar terms
-## 阿凡达术语
+<!-- ## Avatar terms -->
+## Avatar 术语
 
+<!-- 
 Term: | Definition:
 ----- | -----------
 Avatar | An interface for retargeting one skeleton to another.
@@ -32,7 +34,7 @@ T-pose | The pose in which the character has their arms straight out to the side
 Bind-pose | The pose at which the character was modelled.
 Human template | A pre-defined bone-mapping. Used for matching bones from FBX files to the Avatar.
 Translate DoF | The three degrees-of-freedom associated with translation (movement in X,Y & Z) as opposed to rotation.
-
+ -->
 术语 | 定义
 ---- | ----
 Avatar 阿凡达 | 重定向一副骨骼到另一幅的接口。
@@ -45,9 +47,10 @@ Bind-pose 模型姿势 | 角色建模时的姿势。
 Human template 人形模板 | 一副预定义的骨骼映射。用于把 FBX 文件的骨骼匹配到 Avatar。
 Translate DoF 自由度转换 | 把表示位置的 3 自由度转换为旋转。
 
-## Animator and Animator Controller terms
+<!-- ## Animator and Animator Controller terms -->
 ## 动画控制器术语
 
+<!-- 
 Term: | Definition:
 ----- | -----------
 Animator Component | Component on a model that animates that model using the Mecanim animation system. The component has a reference to an Animator Controller asset that controls the animation.
@@ -59,7 +62,7 @@ Animation State Machine | A graph controlling the interaction of Animation State
 Animation Blend Tree | Used for continuous blending between similar Animation Clips based on float Animation Parameters.
 Animation Parameters | Used to communicate between scripting and the Animator Controller. Some parameters can be set in scripting and used by the controller, while other parameters are based on Custom Curves in Animation Clips and can be sampled using the scripting API.
 Inverse Kinematics (IK) | The ability to control the character’s body parts based on various objects in the world.
-
+ -->
 术语 | 定义
 ---- | ----
 Animator Component 动画组件 | 附加到模型上的组件，通过 Mecanim 动画系统使模型动起来。该组件引用了一个动画控制器资源，用于控制动画剪辑。
@@ -72,12 +75,12 @@ Animation Blend Tree 动画混合树 | 用于连续混合相似的动画剪辑�
 Animation Parameters 动画参数 | 用于脚本和动画控制器的通信。一些参数可以在脚本中设置，并应用到动画控制器，而另一些参数则基于动画剪辑的自定义曲线，并且可以在脚本中使用。
 Inverse Kinematics (IK) 反向动力学 | 基于各种对象控制角色身体部位的能力。
 
-> 译著：
+> 译注：
 
-> 反响动力学 http://baike.baidu.com/view/1600095.htm
+> 反响动力学 <http://baike.baidu.com/view/1600095.htm>
 > Inverse Kinematics，IK，一种通过先确定子骨骼的位置，然后反求推导出其所在骨骼链上 n 级父骨骼位置，从而确定整条骨骼链的方法。
 
-> 前向动力学，正向动力学 http://baike.baidu.com/view/2255474.htm
+> 前向动力学，正向动力学 <http://baike.baidu.com/view/2255474.htm>
 > Forward Kinematics，FK，完全遵循父子关系的层级，由父层级带动子层级的运动。
 
 > 在前向运动学中，每一个子关节的位置、方向，都是由父关节所支配的。在电脑动画软件的发展初期，关节动画都是正向链接系统，它的特点是软件开发容易，最致命的弱点便是工作效率太低。

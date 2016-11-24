@@ -4,7 +4,7 @@
 <!-- Unity 手册 > 动画 > 动画系统预览 -->
 
 <!-- # Animation System  -->
-# 动画系统
+# 动画系统概览
 
 <!-- Unity has a rich and sophisticated animation system (sometimes referred to as ‘Mecanim’). It provides: -->
 Unity 拥有丰富和复杂的动画系统（有时称为 Mecanim），提供了以下功能：
@@ -70,7 +70,7 @@ Unity 动画系统还为人形角色提供了一些特殊功能，使你可以�
 4. 当赋予角色模型动画时，一个动画组件被添加。在上面的检视视图中，你可以看到动画组件被指定了动画控制器和 Avatar。动画组件同时使用两者来使模型动起来。只有人形角色才需要引用 Avatar。对于其他类型的动画，只需要一个动画控制器。
 
 <!-- Unity’s animation system (Known as “Mecanim”) comes with a lot of concepts and terminology. If at any point, you need to find out what something means, go to our [Animation Glossary](https://docs.unity3d.com/550/Documentation/Manual/AnimationGlossary.html). -->
-Unity 动画系统（称为 Mecanim）含有大量的概念和术语。在任何时候，如何你需要查找某个东西的含义，请访问 [动画词典](https://docs.unity3d.com/550/Documentation/Manual/AnimationGlossary.html)。
+Unity 动画系统（称为 Mecanim）含有大量的概念和术语。在任何时候，如何你需要查找某个东西的含义，请访问 [动画术语](https://docs.unity3d.com/550/Documentation/Manual/AnimationGlossary.html)。
 
 <!-- ## Legacy animation system -->
 ## 传统动画系统

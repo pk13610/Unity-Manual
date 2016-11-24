@@ -35,24 +35,24 @@
 ## 动画时间轴
 
 <!-- On the right side of the Animation View is the timeline for the current clip. The keyframes for each animated property appear in this timeline. The timeline view has two modes, “Dope Sheet” and “Curves”. You can toggle between these modes by clicking the respective buttons at the bottom of the animated property list area: -->
-动画视图的右侧是每个动画剪辑的时间轴。每个动画属性的关键帧显示在时间轴中。时间轴有两种模式：清单模式和曲线模式。通过点击动画属性列表底部相应的按钮，可以在两种模式之间切换：
+动画视图的右侧是每个动画剪辑的时间轴。每个动画属性的关键帧显示在时间轴中。时间轴有两种模式：关键帧清单模式和曲线模式。通过点击动画属性列表底部相应的按钮，可以在两种模式之间切换：
 
 ![The Dope Sheet / Curves view buttons](https://docs.unity3d.com/uploads/Main/AnimationEditorDopeSheetCurvesButtons.png)
 <!-- > The Dope Sheet / Curves view buttons -->
-> 清单模式/曲线模式按钮
+> 关键帧清单模式/曲线模式按钮
 
 <!-- These offer two alternate views of the animation timeline and keyframe data, with each mode having its own benefits. -->
 这两种模式可以彼此替换，都可以现实动画的时间轴和关键帧数据，但是各有优势。
 
 <!-- ## Dope Sheet Timeline Mode -->
-## 清单模式
+## 关键帧清单模式
 
 <!-- The Dope Sheet mode offers a more compact view, allowing you to view each property’s keyframe seqence in an individual horizontal track. This allows you have a simple overview of the keyframe timing for multiple properties or objects. -->
-清单模式提供更紧凑的视图，允许你以独立的水平轨道查看每个属性的关键帧序列。可以让你简单地描述多个属性或对象的关键帧时间设置。
+关键帧清单模式提供更紧凑的视图，允许你以独立的水平轨道查看每个属性的关键帧序列。可以让你简单地描述多个属性或对象的关键帧时间设置。
 
 ![Here the Animation Window is in Dope Sheet mode, showing the keyframe positions all the animated properties within the Animation Clip](https://docs.unity3d.com/uploads/Main/AnimationEditorDopeSheetView.png)
 <!-- > Here the Animation Window is in Dope Sheet mode, showing the keyframe positions all the animated properties within the Animation Clip -->
-> 这里的动画视图是清单模式，显示了动画剪辑中所有动画属性的关键帧位置。
+> 这里的动画视图是关键帧清单模式，显示了动画剪辑中所有动画属性的关键帧位置。
 
 <!-- ## Curves Timeline Mode -->
 ## 曲线模式
