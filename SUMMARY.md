@@ -25,7 +25,7 @@
         * [材质、着色器、纹理](Manual/Shaders.md)
             * [创建和使用材质](Manual/Materials.md)
             * [标准着色器](Manual/shader-StandardShader.md)
-                * [内容和环境](Manual/StandardShaderContextAndContent.md)
+                * [内容和上下文](Manual/StandardShaderContextAndContent.md)
                 * [金属 vs 镜面](Manual/StandardShaderMetallicVsSpecular.md)
                 * [材质参数](Manual/StandardShaderMaterialParameters.md)
                     * [渲染模式](Manual/StandardShaderMaterialParameterRenderingMode.md)
