@@ -1,9 +1,9 @@
-> [Specular Mode: Specular Parameter](http://docs.unity3d.com/Manual/StandardShaderMaterialParameterSpecular.html)
+<!-- > [Specular Mode: Specular Parameter](http://docs.unity3d.com/Manual/StandardShaderMaterialParameterSpecular.html) -->
 
-Unity Manual > Graphics > Graphics Overview > Materials, Shaders & Textures > Standard Shader > Material parameters > Specular Mode: Specular Parameter
-Albedo Color and Transparency
+<!-- Unity Manual > Graphics > Graphics Overview > Materials, Shaders & Textures > Standard Shader > Material parameters > Specular Mode: Specular Parameter -->
 
 # Specular Mode: Specular Parameter
+# 镜面模式：镜面参数
 
 ![](http://docs.unity3d.com/uploads/Main/StandardShaderSpecularMode.png)
 
