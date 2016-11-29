@@ -34,7 +34,7 @@ If we instead represent this detail with a bump map, the surface geometry can be
 # 如何创建和使用凹凸贴图
 
 <!-- Bump mapping is a relatively old graphics technique, but is still one of the core methods required to create detailed realistic realtime graphics. Bump Maps are also commonly referred to as **Normal Maps** or **Height Maps**, however these terms have slightly different meanings which will be explained below. -->
-凹凸贴图是一种相对古老的图形技术，但仍然是创建细节逼真的实时图形所需的核心方法之一。凹凸贴图通常也被称为**法线题图**或**高度贴图**，不过这些术语的含义略有不同，将会在下面解释。
+凹凸贴图是一种相对古老的图形技术，但仍然是创建细节逼真的实时图形所需的核心方法之一。凹凸贴图通常也被称为**法线题图**或**高度图**，不过这些术语的含义略有不同，将会在下面解释。
 
 <!-- ## What are Surface Normals? -->
 ## 什么是表面法线？
@@ -135,23 +135,23 @@ There are some software packages which can analyse the lighting in a regular pho
 > 一个角色纹理图集及其对应的法线贴图集。
 
 <!-- ## What’s the difference between Bump Maps, Normal Maps and Height Maps? -->
-## 凹凸贴图、法线贴图和高度贴图有什么区别？
+## 凹凸贴图、法线贴图和高度图有什么区别？
 
 <!-- **Normal Maps** and **Height Maps** are both types of Bump Map. They both contain data for representing apparent detail on the surface of simpler polygonal meshes, but they each store that data in a different way. -->
-**法线贴图**和**高度贴图**都属于凹凸贴图类型。它们都含有用于简化多面性网格的表面视觉细节，但是以不同的方式存储数据。
+**法线贴图**和**高度图**都属于凹凸贴图类型。它们都含有用于简化多面性网格的表面视觉细节，但是以不同的方式存储数据。
 
 ![On the left, a height map for bump mapping a stone wall. On the right, a normal map for bump mapping a stone wall.](http://docs.unity3d.com/uploads/Main/BumpMapHeightMapNormalMapComparison.png)
 <!-- > On the left, a height map for bump mapping a stone wall. On the right, a normal map for bump mapping a stone wall. -->
-> 左边是映射石墙凹凸信息的高度贴图，右边是映射石墙凹凸信息的法线贴图。
+> 左边是映射石墙凹凸信息的高度图，右边是映射石墙凹凸信息的法线贴图。
 
 <!-- Above, on the left, you can see a height map used for bump mapping a stone wall. A height map is a simple black and white texture, where each pixel represents the amount that point on the surface should appear to be raised. The whiter the pixel colour, the higher the area appears to be raised. -->
-在左图中，可以看到一张映射石墙凹凸信息的高度贴图。高度贴图是一张简单的黑白纹理，每个像素代表了表面上该点应该凸起的高度，像素点颜色越白，该区域看起来更高。
+在左图中，可以看到一张映射石墙凹凸信息的高度图。高度图是一张简单的黑白纹理，每个像素代表了表面上该点应该凸起的高度，像素点颜色越白，该区域看起来更高。
 
 <!-- A normal map is an RGB texture, where each pixel represents the difference in direction the surface should appear to be facing, relative to its un-modified surface normal. These textures tend to have a bluey-purple tinge, because of the way the vector is stored in the RGB values. -->
 法线贴图是一张 RGB 纹理，每个像素代表了表面相对于真实法线（垂直）的朝向（夹角）。这些纹理往往是蓝紫色调，因为矢量用 RGB 值存储。
 
 <!-- Modern realtime 3D graphics hardware rely on Normal Maps, because they contain the vectors required to modify how light should appear to bounce of the surface. Unity can also accept Height Maps for bump mapping, but they must be converted to Normal Maps on import in order to use them. -->
-现代实时 3D 图形硬件更信赖（依赖）法线贴图，因为法线贴图包含了表面应该如何弹射光线所需的矢量信息。Unity 的凹凸贴图也可以接受高度贴图，但导入必须转换为法线贴图才能使用。
+现代实时 3D 图形硬件更信赖（依赖）法线贴图，因为法线贴图包含了表面应该如何弹射光线所需的矢量信息。Unity 的凹凸贴图也可以接受高度图，但导入必须转换为法线贴图才能使用。
 
 <!-- ## Why the bluey-purple colours? -->
 ## 为什么是蓝紫色？
@@ -189,7 +189,7 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 > 不同光照情况下，应用了凹凸贴图的同一堵石墙。一个火把点光源照亮了石头。光线撞击基础模型（多边形）的角度，被法线贴图中的矢量所调整，然后点亮石头的每个像素。因此，面向光源的像素是亮的，背光的像素较暗或在阴影中。
 
 <!-- ## How to import and use Normal Maps and Height Maps -->
-## 如何导入和使用法线贴图和高度贴图
+## 如何导入和使用法线贴图和高度图
 
 <!-- A normal map can be imported by placing the texture file in your assets folder, as usual. However, you need to tell Unity that this texture is a normal map. You can do this by changing the “Texture Type” setting to “Normal Map” in the import inspector settings. -->
 像平常一样，把纹理文件放入 Assets 文件夹，就可以导入法线贴图。不过，你需要告诉 Unity 这个纹理是一张法线贴图。可以在导入资源的检视视图中，把改变『纹理类型』为『法线贴图』。
@@ -197,16 +197,16 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 ![](http://docs.unity3d.com/uploads/Main/BumpMapImportInspectorWindow.png)
 
 To import a black and white heightmap as a normal map, the process is almost identical, except you need to check the “Create from Greyscale” option.
-把黑白高度贴图导入为法线贴图的过程，与直接导入法线贴图几乎完全相同，除了需要选中复选框『Create From Greyscale』。
+把黑白高度图导入为法线贴图的过程，与直接导入法线贴图几乎完全相同，除了需要选中复选框『Create From Greyscale』。
 
 ![](http://docs.unity3d.com/uploads/Main/BumpMapImportInspectorGreyscale.png)
 
 <!-- With “Create From Greyscale” selected, a Bumpiness slider will appear in the inspector. You can use this to control how steep the angles in the normalmap are, when being converted from the heights in your heightmap. A low bumpiness value will mean that even sharp contrast in the heightmap will be translated to gentle angles and bumps. A high value will create exaggerated bumps and very high contrast lighting responses to the bumps. -->
-选中『Create From Greyscale』后，将出现一个凹凸度滑动器。你可以使用使用这个滑动器，来控制高度贴图的高度转换为法线贴图中的角度时的陡峭程度。低凹凸度将意味着，即使是高度贴图中的强烈对比，也将被转换为平缓的角度和凹凸。高凹凸度将创建夸张的凹凸，产生高对比度的光照响应。
+选中『Create From Greyscale』后，将出现一个凹凸度滑动器。你可以使用使用这个滑动器，来控制高度图的高度转换为法线贴图中的角度时的陡峭程度。低凹凸度将意味着，即使是高度图中的强烈对比，也将被转换为平缓的角度和凹凸。高凹凸度将创建夸张的凹凸，产生高对比度的光照响应。
 
 ![Low and High Bumpiness settings when importing a height map as a normal map, and the resulting effect on the model.](http://docs.unity3d.com/uploads/Main/BumpMapLowAndHighBumpiness.png)
 > Low and High Bumpiness settings when importing a height map as a normal map, and the resulting effect on the model.
-> 把高度贴图导入为法线贴图时，凹凸度高低对模型的影响。
+> 把高度图导入为法线贴图时，凹凸度高低对模型的影响。
 
 <!-- Once you have a normalmap in your assets, you can place it into the Normal Map slot of your Material in the inspector. The Standard Shader has a normal map slot, and many of the older legacy shaders also support normal maps. -->
 Assets 文件夹中有了法线贴图后，就可以在检视视图中把它放入材质的法线贴图插槽。标准着色具有一个法线贴图插槽，许多旧的传统着色器也支持法线贴图。
@@ -216,14 +216,14 @@ Assets 文件夹中有了法线贴图后，就可以在检视视图中把它放�
 > 把一张法线法线贴图放入标准着色起材质的正确插槽中。
 
 <!-- If you imported a normalmap or heightmap, and did not mark it as a normal map (By selecting **Texture Type: Normal Map** as described above), the Material inspector will warn you about this and offer to fix it, as so: -->
-如果导入了一张法线贴图或高度贴图，但是没有把它标记为法线贴图（选择**纹理类型：法线贴图**），材质的检视视图将提醒你修正它，像这样：
+如果导入了一张法线贴图或高度图，但是没有把它标记为法线贴图（选择**纹理类型：法线贴图**），材质的检视视图将提醒你修正它，像这样：
 
 ![The Fix Now warning appears when trying to use a normalmap that has not been marked as such in the inspector.](http://docs.unity3d.com/uploads/Main/BumpMapPutIntoShaderFixNow.png)
 <!-- > The “Fix Now” warning appears when trying to use a normalmap that has not been marked as such in the inspector. -->
 > 当尝试在法线贴图插槽上使用未标记为法线贴图的纹理时，将显示『立即修复』警告。
 
 <!-- Clicking “Fix Now” has the same effect as selecting **Texture Type: Normal Map** in the texture inspector settings. This will work if your texture really is a normal map. However if it is a greyscale heightmap, it will not automatically detect this - so for heightmaps you must always select the “Create from Greyscale” option in the texture’s inspector window. -->
-点击『立即修复』，与在纹理检视视图中选择**纹理类型：法线贴图**，具有相同的效果。如果纹理是一张法线贴图，这么做是有效的。但是，如果它其实是一张灰阶高度贴图，就无法自动检测到 — 所以对于高度贴图，你必须总是在纹理的检视视图中选中『Create from Greyscale』。
+点击『立即修复』，与在纹理检视视图中选择**纹理类型：法线贴图**，具有相同的效果。如果纹理是一张法线贴图，这么做是有效的。但是，如果它其实是一张灰阶高度图，就无法自动检测到 — 所以对于高度图，你必须总是在纹理的检视视图中选中『Create from Greyscale』。
 
 <!-- ## Secondary Normal Maps -->
 ## 辅助法线贴图
