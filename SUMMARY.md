@@ -8,7 +8,7 @@
         * [Primitive and Placeholder Objects](Manual/PrimitiveObjects.md)
         * [Importing Assets](Manual/ImportingAssets.md)
 * [图形](Manual/Graphics.md)
-    * [图形概览](Manual/GraphicsOverview.md)
+    * [图形概述](Manual/GraphicsOverview.md)
         * [光照概述](Manual/LightingOverview.md)
             * [光照概述](Manual/Lighting.md)
             * [光源](Manual/LightSources.md)
