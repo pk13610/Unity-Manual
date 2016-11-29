@@ -1,8 +1,7 @@
-> 原文：[Understanding Automatic Memory Management](http://docs.unity3d.com/Manual/UnderstandingAutomaticMemoryManagement.html)
-> 
-<!-- Unity Manual > Scripting > Scripting Overview > Understanding Automatic Memory Management -->
+<!-- > 原文：[Understanding Automatic Memory Management](http://docs.unity3d.com/Manual/UnderstandingAutomaticMemoryManagement.html) -->
 
-Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 理解自动内存管理
+<!-- Unity Manual > Scripting > Scripting Overview > Understanding Automatic Memory Management -->
+<!-- Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 理解自动内存管理 -->
 
 <!-- # Understanding Automatic Memory Management -->
 # 理解自动内存管理

@@ -1,7 +1,7 @@
-> 原文：[Variables and the Inspector](http://docs.unity3d.com/Manual/VariablesAndTheInspector.html)
+<!-- > 原文：[Variables and the Inspector](http://docs.unity3d.com/Manual/VariablesAndTheInspector.html) -->
 
 <!-- Unity Manual > Scripting > Scripting Overview > Creating and Using Scripts -->
-Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 变量和检视面板
+<!-- Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 变量和检视面板 -->
 
 <!-- # Variables and the Inspector -->
 # 变量和检视面板

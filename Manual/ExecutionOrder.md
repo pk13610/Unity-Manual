@@ -1,6 +1,5 @@
 <!-- Unity Manual > Scripting > Scripting Overview > Execution Order of Event Functions -->
-
-Unity 手册 > 脚本 > 脚本概述 > 事件执行顺序
+<!-- Unity 手册 > 脚本 > 脚本概述 > 事件执行顺序 -->
 
 <!-- # Execution Order of Event Functions -->
 # 事件函数执行顺序

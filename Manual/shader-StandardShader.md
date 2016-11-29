@@ -37,10 +37,9 @@ Unity 标准着色器是一个内置着色器，具有全面的功能。它可�
 <!-- > The light rendered at each point on a surface is calculated to be the same as the amout of light received from its environment. The microfacets of rough surfaces are affected by light from a wider area. Smoother surfaces give stronger and smaller highlights. Point A reflects light from the source towards the camera. Point B takes on a blue tint from ambient light from the sky. Point C takes its ambient and reflective lighting from the surrounding ground colours. -->
 > 在表面每个点处渲染的光与从环境接收的光的数量相等。粗糙表面的细微颗粒受到来自更大区域的光的影响。越平滑的表面，反射的光越越强，反射的光束越小。点 A 将光从光源反射到摄像机。点 B 从天空的环境光获得蓝色色调。点 C 接收环境光，并反射来自周围地面的光。
 
-* **High Dynamic Range (HDR)** - This refers to colours outside the usual 0–1 range. For instance, the sun can easily be ten times brighter than a blue sky. For an in-depth discussion, see the Unity Manual [HDR](https://docs.unity3d.com/550/Documentation/Manual/HDR.html) page.
-
+<!-- * **High Dynamic Range (HDR)** - This refers to colours outside the usual 0–1 range. For instance, the sun can easily be ten times brighter than a blue sky. For an in-depth discussion, see the Unity Manual [HDR](https://docs.unity3d.com/550/Documentation/Manual/HDR.html) page. -->
 * **高动态范围图像（High Dynamic Range，HDR）** — 通常指 0 - 1 范围之外的光。例如，太阳光的亮度比蓝天高 10 倍。相关的深入讨论，请参阅 Unity 手册的 [HDR](https://docs.unity3d.com/550/Documentation/Manual/HDR.html) 页。
 
 ![A scene using High Dynamic Range. The sunlight reflecting in the car window appears far brighter than other objects in the scene, because it has been processed using HDR](http://docs.unity3d.com/uploads/Main/GlowWithHdrAdjusted.png)
-> A scene using High Dynamic Range. The sunlight reflecting in the car window appears far brighter than other objects in the scene, because it has been processed using HDR
+<!-- > A scene using High Dynamic Range. The sunlight reflecting in the car window appears far brighter than other objects in the scene, because it has been processed using HDR -->
 > 一个使用高动态范围图像的场景。从车窗反射的太阳光比场景中的其他对象明亮的多，因为它已经用 HDR 处理过。

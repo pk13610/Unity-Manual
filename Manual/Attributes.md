@@ -1,7 +1,7 @@
-> 原文：[Attributes](http://docs.unity3d.com/Manual/Attributes.html)
+<!-- > 原文：[Attributes](http://docs.unity3d.com/Manual/Attributes.html) -->
 
 <!-- Unity Manual > Scripting > Scripting Overview > Attributes -->
-Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 属性
+<!-- Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 属性 -->
 
 <!-- # Attributes -->
 # 属性

@@ -35,7 +35,7 @@
 <!-- ## Built-in Shaders -->
 ## 内置着色器
 
-In addition to the [Standard Shader](http://docs.unity3d.com/Manual/shader-StandardShader.html), there are a number of other categories of built-in shaders for specialised purposes:
+<!-- In addition to the [Standard Shader](http://docs.unity3d.com/Manual/shader-StandardShader.html), there are a number of other categories of built-in shaders for specialised purposes: -->
 除了[标准着色器](http://docs.unity3d.com/Manual/shader-StandardShader.html)，还是许多其他类型的内置着色器，用于不同的用途：
 
 <!-- 
@@ -83,7 +83,7 @@ In addition to the [Standard Shader](http://docs.unity3d.com/Manual/shader-Stand
 <!-- Each car body material has a reference to the “Car Texture”, which is a texture map containing all the details of the bodywork, without a specific paint colour. -->
 每个车身材质都引用了汽车纹理，一张包含了车身所有细节的纹理图，其中，但是没有指定绘制颜色。
 
-The Carbody shader also accepts a tint colour, which is set to a different colour for the red and blue cars, giving each car a different look while using a single texture for both of them.
+<!-- The Carbody shader also accepts a tint colour, which is set to a different colour for the red and blue cars, giving each car a different look while using a single texture for both of them. -->
 车身着色器还可以接受一个色调，用于为红车和蓝车设置不同的色调，从而让两辆车拥有不同的外观，而我们只使用了一张纹理。
 
 <!-- The car wheel models use a separate material again, but this time both cars share the same material for their wheels, as the wheels do not differ on each car. The wheel material uses the Standard Shader, and has a reference again to the Car Texture. -->

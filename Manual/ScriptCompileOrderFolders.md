@@ -1,5 +1,5 @@
 <!-- # Special Folders and Script Compilation Order -->
-# 特殊文件夹和脚本编译顺序
+# 特殊文件夹和脚本的编译顺序
 
 <!-- For the most part, you can choose any names you like for the folders in your project but Unity reserves some names to indicate that the contents have a special purpose. Some of these folders have an effect on the order of script compilation. Essentially, there are four separate phases of script compilation and the phase where a script will be compiled is determined by its parent folder. -->
 大多数情况下，你可以为项目中的文件夹选择任意你喜欢的名称，但是 Unity 因为一些特殊原因而保留了一些名称。其中，有部分命名会影响到脚本的编译顺序。从本质上看，脚本编辑过程分为 4 个独立的阶段，而一个脚本何时被变异，则取决于它所在的父文件夹。

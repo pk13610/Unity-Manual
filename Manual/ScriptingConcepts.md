@@ -1,5 +1,5 @@
 <!-- Unity Manual > Scripting > Scripting Overview -->
-Unity 手册 > 脚本 > 脚本概述
+<!-- Unity 手册 > 脚本 > 脚本概述 -->
 
 <!-- # Scripting Overview -->
 # 脚本概述

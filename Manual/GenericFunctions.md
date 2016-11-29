@@ -1,7 +1,7 @@
-> 原文：[Generic Functions](http://docs.unity3d.com/Manual/GenericFunctions.html)
+<!-- > 原文：[Generic Functions](http://docs.unity3d.com/Manual/GenericFunctions.html) -->
 
 <!-- Unity Manual > Scripting > Scripting Overview > Generic Functions -->
-Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 泛型函数
+<!-- Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 泛型函数 -->
 
 <!-- # Generic Functions -->
 # 泛型函​​数

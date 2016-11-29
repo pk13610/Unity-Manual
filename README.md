@@ -1,4 +1,4 @@
-# Unity Manual 中文版
+# Unity 手册（中文版）
 
 <https://nuysoft.gitbooks.io/unity-manual/content/>
 

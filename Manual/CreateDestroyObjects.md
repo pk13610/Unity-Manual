@@ -1,7 +1,7 @@
-> 原文：[Creating and Destroying GameObjects](http://docs.unity3d.com/Manual/CreateDestroyObjects.html)
+<!-- > 原文：[Creating and Destroying GameObjects](http://docs.unity3d.com/Manual/CreateDestroyObjects.html) -->
 
 <!-- Unity Manual > Scripting > Scripting Overview > Creating and Destroying GameObjects -->
-Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 创建和销毁游戏对象
+<!-- Unity 手册 <i class="fa fa-angle-right"/> 脚本 <i class="fa fa-angle-right"/> 脚本概述 <i class="fa fa-angle-right"/> 创建和销毁游戏对象 -->
 
 <!-- # Creating and Destroying GameObjects -->
 # 创建和销毁游戏对象
