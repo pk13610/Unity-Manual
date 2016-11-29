@@ -16,7 +16,7 @@
 <!-- This effect, while it can produce a very convincing representation of 3D geometry, is still limited to the surface of the flat polygons of an object’s mesh. This means that while surface bumps will appear to protrude and occlude each other, the “silhouette” of the model will never be modified, because ultimately the effect is drawn onto the surface of the model and does not modify the actual geometry. -->
 虽然可以产生非常逼真的 3D 几何效果，但是仅限于物体网格的平面多边形表面。这意味着，表面凸起将会突出现实并且彼此遮挡，但是并不会改变模型的『轮廓』，因为最终效果是绘制在模型表面，并不会实际的几何形状。
 
-A heightmap should be a greyscale image, with white areas representing the high areas of your texture and black representing the low areas. Here’s a typical albedo map and a heightmap to match.
+<!-- A heightmap should be a greyscale image, with white areas representing the high areas of your texture and black representing the low areas. Here’s a typical albedo map and a heightmap to match. -->
 一张高度图应该是一张灰阶图，白色区域表示纹理的高区域，黑色区域代表低区域。下面是一张典型的漫反射贴图和对应的高度图。
 
 ![An albedo colour map, and a heightmap to match.](http://docs.unity3d.com/uploads/Main/StandardShaderHeightmapTexture.png)
