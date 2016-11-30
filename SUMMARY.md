@@ -36,7 +36,7 @@
                     * [法线贴图（凹凸贴图）](Manual/StandardShaderMaterialParameterNormalMap.md)
                     * [高度图](Manual/StandardShaderMaterialParameterHeightMap.md)
                     * [散射贴图](Manual/StandardShaderMaterialParameterOcclusionMap.md)
-                    <!-- * [自发光](Manual/StandardShaderMaterialParameterEmission.md) -->
+                    * [自发光](Manual/StandardShaderMaterialParameterEmission.md)
                     <!-- * [辅助贴图（细节贴图）和细节蒙板](Manual/StandardShaderMaterialParameterDetail.md) -->
                     <!-- * [菲涅耳效应](Manual/StandardShaderFresnel.md) -->
                 <!-- * [材质图表](Manual/StandardShaderMaterialCharts.md) -->
