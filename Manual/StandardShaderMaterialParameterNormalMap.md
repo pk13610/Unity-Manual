@@ -20,7 +20,7 @@
 <!-- Depending on the situation it is not normally a good idea to have such tiny details modelled as “real” geometry. On the right you can see the polygons required to make up the detail of a single screwhead. Over a large model with lots of fine surface detail this would require a very high number of polygons to be drawn. To avoid this, we should use a normal map to represent the fine surface detail, and a lower resolution polygonal surface for the larger shape of the model. -->
 以真实几何形状为如此细微的细节建模通常不是一个好主意。在上图右侧， 你可以看到组成单个螺丝头细节所需的多边形。带有大量清晰细节的大型模型，将需要绘制非常多数量的多边形。为了避免这种情况，应该使用法线贴图来表示清晰的表面细节，较大形状的模型使用较低分辨率的多边形表面。
 
-If we instead represent this detail with a bump map, the surface geometry can become much simpler, and the detail is represented as a texture which modulates how light reflects off the surface. This is something modern graphics hardware can do extremely fast. Your metal surface can now be a low-poly flat plane, and the screws, rivets, grooves and scratches will catch the light and appear to have depth because of the texture.
+<!-- If we instead represent this detail with a bump map, the surface geometry can become much simpler, and the detail is represented as a texture which modulates how light reflects off the surface. This is something modern graphics hardware can do extremely fast. Your metal surface can now be a low-poly flat plane, and the screws, rivets, grooves and scratches will catch the light and appear to have depth because of the texture. -->
 如果使用一张凹凸贴图来呈现细节，表面的几何形状可以变得更加简单，用细节纹理调制光从表面反射的方式。现代图形硬件可以非常快地执行这个个过程。现在，金属表面是一个低面数（低多边形）的平面，螺丝、铆钉和划痕将捕获光线，并且因为纹理贴图，它们看起来似乎有了深度。
 
 ![The screws, grooves and scratches are defined in a normalmap, which modifies how light reflects off the surface of this low-poly plane, giving the impression of 3D detail. As well as the rivets and screws, a texture allows us to include far more detail like subtle bumps and scratches.](http://docs.unity3d.com/uploads/Main/StandardShaderNormalMapAircraftSurface.png)
@@ -30,7 +30,7 @@ If we instead represent this detail with a bump map, the surface geometry can be
 <!-- In modern game development art pipelines, artists will use their 3D modelling applications to generate normal maps based on very high resolution source models. The normal maps are then mapped onto a lower-resolution game-ready version of the model, so that the original high-resolution detail is rendered using the normalmap. -->
 在现代游戏开发流程中，设计师将使用 3D 建模软件，基于非常高分辨率的原始模型生成法线贴图。然后，将法线贴图映射到较低分辨率的模型（游戏中实际使用的模型）上，这样，通过法线贴图，原始的高分率细节就被渲染了。
 
-# How to create and use Bump Maps
+<!-- # How to create and use Bump Maps -->
 # 如何创建和使用凹凸贴图
 
 <!-- Bump mapping is a relatively old graphics technique, but is still one of the core methods required to create detailed realistic realtime graphics. Bump Maps are also commonly referred to as **Normal Maps** or **Height Maps**, however these terms have slightly different meanings which will be explained below. -->
@@ -117,10 +117,10 @@ If we instead represent this detail with a bump map, the surface geometry can be
 <!-- Commonly, Normal Maps are produced by 3D or Texture artists in conjunction with the model or textures they are producing, and they often mirror the layout and contents of the Albedo map. Sometimes they are produced by hand, and sometimes they are rendered out from a 3D application. -->
 通常情况下，法线贴图是同 3D 或纹理设计师制作的模型或纹理一起生成的，通常反应了漫反射贴图的结构和内容。有时也会手工制作，有时由 3D 软件渲染生成。
 
-How to render normal maps from a 3D application is beyond the scope of this documentation, however the basic concept is that a 3D artist would produce two versions of a model - a very high resolution model containing all detail as polygons, and a lower-res “game ready” model. The high res model would be too detailed to run optimally in a game (too many triangles in the mesh), but it is used in the 3D modelling application to generate the normal maps. The lower-res version of model can then omit the very fine level of geometry detail that is now stored in the normal maps, so that it can be rendered using the normal mapping instead. A typical use case for this would be to show the bumped detail of creases, buttons, buckles and seams on a characters clothing.
+<!-- How to render normal maps from a 3D application is beyond the scope of this documentation, however the basic concept is that a 3D artist would produce two versions of a model - a very high resolution model containing all detail as polygons, and a lower-res “game ready” model. The high res model would be too detailed to run optimally in a game (too many triangles in the mesh), but it is used in the 3D modelling application to generate the normal maps. The lower-res version of model can then omit the very fine level of geometry detail that is now stored in the normal maps, so that it can be rendered using the normal mapping instead. A typical use case for this would be to show the bumped detail of creases, buttons, buckles and seams on a characters clothing. -->
 3D 软件如何渲染法线贴图超出了本文档的范围，但是基本的概念是，3D 设计师会为一个模型生成两个版本 — 一个包含了所有多边形细节的超高分率模型，和一个程序用的低分辨率模型。在游戏中，高分辨率模型含有太多细节（网格中有太多的三角形），以至于不适合在游戏中运行，但是用于在 3D 模型软件中生成法线贴图。低分辨率模型则可以运行在游戏中，并且忽略那些存储在法线贴图中的非常清晰的几何细节，几何细节则用法线贴图渲染。一个典型的用例是，在角色服饰上现实折痕、纽扣、带扣和接缝。
 
-There are some software packages which can analyse the lighting in a regular photographic texture, and extract a normalmap from it. This works by assuming the original texture is lit from a constant direction, and the light and dark areas are analysed and assumed to correspond with angled surfaces. However, when actually using a bump map, you need to make sure that your Albedo texture does not have lighting from any particular direction in the image - ideally it should represent the colours of the surface with no lighting at all - because the lighting information will be calculated by Unity according to the light direction, surface angle and bump map information.
+<!-- There are some software packages which can analyse the lighting in a regular photographic texture, and extract a normalmap from it. This works by assuming the original texture is lit from a constant direction, and the light and dark areas are analysed and assumed to correspond with angled surfaces. However, when actually using a bump map, you need to make sure that your Albedo texture does not have lighting from any particular direction in the image - ideally it should represent the colours of the surface with no lighting at all - because the lighting information will be calculated by Unity according to the light direction, surface angle and bump map information. -->
 有些软件包可以分析普通摄影纹理中的光照信息，并从中提取法线贴图。工作原理是，假设一束平行光照射到原始纹理上，然后分析浅色和暗色区域，作为法线的角度。不过，在真正使用凹凸贴图时，你需要确保漫反射纹理中不含有任何方向的光照 — 理想情况下，它应该呈现完全无光情况下的表面颜色 — 因为光照信息由 Unity 根据光照角度、表面角度和凹凸贴图计算。
 
 <!-- Here are two examples, one is a simple repeating stone wall texture with its corresponding normal map, and one is a character’s texture atlas with its corresponding normal map: -->
@@ -169,7 +169,7 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 > 译注：rgb(110,232,204)
 
 ![The bright cyan areas in the normalmap for these stones show a steep modification to the polygons surface normals at the top edge of each stone, causing them to catch the light at the correct angle.](http://docs.unity3d.com/uploads/Main/BumpMapColourMapStoneWallExample.png)
-> The bright cyan areas in the normalmap for these stones show a steep modification to the polygon’s surface normals at the top edge of each stone, causing them to catch the light at the correct angle.
+<!-- > The bright cyan areas in the normalmap for these stones show a steep modification to the polygon’s surface normals at the top edge of each stone, causing them to catch the light at the correct angle. -->
 > 这些石头的法线贴图中的亮青色区域显示了对每个石头顶部边缘的多边形表面法线的陡峭修改，使得它们以正确的角度捕获光线。
 > 在这些石头的法线图中，亮青色区域对每个石头顶部边缘的多边形表面法线进行了陡峭的修改，使得它们以正确的角度捕获光线。
 
@@ -177,7 +177,7 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 法线贴图
 
 ![A stone wall with no bumpmap effect. The edges and facets of the rock do not catch the directional sun light in the scene.](http://docs.unity3d.com/uploads/Main/BumpMapStoneExampleNoBumps.png)
-> A stone wall with no bumpmap effect. The edges and facets of the rock do not catch the directional sun light in the scene.
+<!-- > A stone wall with no bumpmap effect. The edges and facets of the rock do not catch the directional sun light in the scene. -->
 > 一堵没有凹凸效果的石墙。岩石的边缘和表面不会捕捉场景中的平行太阳光。
 
 ![The same stone wall with bumpmapping applied. The edges of the stones facing the sun reflect the directional sun light very differently to the faces of the stones, and the edges facing away.](http://docs.unity3d.com/uploads/Main/BumpMapStoneExampleDay.png)
@@ -185,7 +185,7 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 > 应用了凹凸贴图的同一堵石墙。岩石面向太阳的边缘反射的平行太阳光，与岩石的表面和不朝向太阳的边缘，非常不同。
 
 ![The same bumpmapped stone wall, in a different lighting scenario. A point light torch illuminates the stones. Each pixel of the stone wall is lit according to how the light hits the angle of the base model (the polygon), adjusted by the vectors in the normal maps. Therefore pixels facing the light are bright, and pixels facing away from the light are darker, or in shadow.](http://docs.unity3d.com/uploads/Main/BumpMapStoneExampleNightTorch.png)
-> The same bumpmapped stone wall, in a different lighting scenario. A point light torch illuminates the stones. Each pixel of the stone wall is lit according to how the light hits the angle of the base model (the polygon), adjusted by the vectors in the normal maps. Therefore pixels facing the light are bright, and pixels facing away from the light are darker, or in shadow.
+<!-- > The same bumpmapped stone wall, in a different lighting scenario. A point light torch illuminates the stones. Each pixel of the stone wall is lit according to how the light hits the angle of the base model (the polygon), adjusted by the vectors in the normal maps. Therefore pixels facing the light are bright, and pixels facing away from the light are darker, or in shadow. -->
 > 不同光照情况下，应用了凹凸贴图的同一堵石墙。一个火把点光源照亮了石头。光线撞击基础模型（多边形）的角度，被法线贴图中的矢量所调整，然后点亮石头的每个像素。因此，面向光源的像素是亮的，背光的像素较暗或在阴影中。
 
 <!-- ## How to import and use Normal Maps and Height Maps -->
@@ -196,7 +196,7 @@ RGB 值 (0.43, 0.91, 0.80) 给出一个矢量 (–0.14, 0.82, 0.6)，表示表�
 
 ![](http://docs.unity3d.com/uploads/Main/BumpMapImportInspectorWindow.png)
 
-To import a black and white heightmap as a normal map, the process is almost identical, except you need to check the “Create from Greyscale” option.
+<!-- To import a black and white heightmap as a normal map, the process is almost identical, except you need to check the “Create from Greyscale” option. -->
 把黑白高度图导入为法线贴图的过程，与直接导入法线贴图几乎完全相同，除了需要选中复选框『Create From Greyscale』。
 
 ![](http://docs.unity3d.com/uploads/Main/BumpMapImportInspectorGreyscale.png)
@@ -205,7 +205,7 @@ To import a black and white heightmap as a normal map, the process is almost ide
 选中『Create From Greyscale』后，将出现一个凹凸度滑动器。你可以使用使用这个滑动器，来控制高度图的高度转换为法线贴图中的角度时的陡峭程度。低凹凸度将意味着，即使是高度图中的强烈对比，也将被转换为平缓的角度和凹凸。高凹凸度将创建夸张的凹凸，产生高对比度的光照响应。
 
 ![Low and High Bumpiness settings when importing a height map as a normal map, and the resulting effect on the model.](http://docs.unity3d.com/uploads/Main/BumpMapLowAndHighBumpiness.png)
-> Low and High Bumpiness settings when importing a height map as a normal map, and the resulting effect on the model.
+<!-- > Low and High Bumpiness settings when importing a height map as a normal map, and the resulting effect on the model. -->
 > 把高度图导入为法线贴图时，凹凸度高低对模型的影响。
 
 <!-- Once you have a normalmap in your assets, you can place it into the Normal Map slot of your Material in the inspector. The Standard Shader has a normal map slot, and many of the older legacy shaders also support normal maps. -->
