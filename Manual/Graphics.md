@@ -2,7 +2,7 @@
 
 <!-- Unity Manual > Graphics -->
 
-# Graphics
+<!-- # Graphics -->
 # 图形
 
 ![](http://docs.unity3d.com/uploads/Main/GraphicsIntroPic.jpg)
@@ -16,7 +16,7 @@ Unity 为你的游戏提供符合直觉的实时全局光照和基于物理的�
 <!-- This section explains all you need to know about [Lighting](https://docs.unity3d.com/Manual/LightingOverview.html), [Cameras](https://docs.unity3d.com/Manual/CamerasOverview.html), [Materials, Shaders & Textures](https://docs.unity3d.com/Manual/Shaders.html), [Particles](https://docs.unity3d.com/Manual/ParticleSystems.html) & [Visual Effects](https://docs.unity3d.com/Manual/comp-Effects.html), and much more. -->
 本章将介绍光照、摄像机、材质、着色、纹理、粒子效果和视觉效果等内容。
 
-See also the Knowledge Base [Graphics](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics) section.
+<!-- See also the Knowledge Base [Graphics](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics) section. -->
 另外，请参阅[图形知识库](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics)。
 
 <!-- There are also many useful graphics tutorials in the Tutorials section. -->
