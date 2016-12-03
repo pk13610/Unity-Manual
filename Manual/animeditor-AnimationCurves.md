@@ -17,17 +17,17 @@
 > 动画曲线带有可视化的颜色标记。在这个例子中，绿色线条表示弹跳立方体的 Y 轴动画。
 
 <!-- ### Understanding Curves, Keys and Keyframes -->
-### 理解曲线、控制点、关键帧
+### 理解曲线、关键点、关键帧
 
 <!-- An **Animation Curve** has multiple **keys** which are control points that the curve passes through. These are visualized in the **Curve Editor** as small diamond shapes on the curves. A frame in which one or more of the shown curves have a **key** is called a **keyframe**. -->
-一条**动画曲线**含有（穿过）多个**控制点**。在**曲线编辑器**中，控制点显示为曲线上的小菱形。含有一个或多个**控制点**的桢称为**关键帧**。
+一条**动画曲线**含有（穿过）多个**关键点**。在**曲线编辑器**中，关键点显示为曲线上的小菱形。含有一个或多个**关键点**的桢称为**关键帧**。
 
 <!-- If a property has a **key** in the currently previewed frame, the curve indicator will have a diamond shape, and the property list will also have diamond shapes next to the value. -->
-如果某个属性在当前预览的桢上有一个**控制点**，对应的曲线上也会有一个小菱形，在属性列表中也会有一个小菱形紧跟在值后面。
+如果某个属性在当前预览的桢上有一个**关键点**，对应的曲线上也会有一个小菱形，在属性列表中也会有一个小菱形紧跟在值后面。
 
 ![The Rotation.y property has a key at the currently previewed frame.](https://docs.unity3d.com/550/Documentation/uploads/Main/AnimationWindowCurveKeyframe.png)
 <!-- > The **Rotation.y** property has a **key** at the currently previewed frame. -->
-> **属性 Rotation.y** 在当前预览桢上有一个**控制点**。
+> **属性 Rotation.y** 在当前预览桢上有一个**关键点**。
 
 <!-- The **Curve Editor** will only show curves for the properties that are selected. If multiple properties are selected in the property list, the curves will be shown overlaid together. -->
 **曲线编辑器**只会显示当前选中属性的曲线。如果在属性列表中选中了多个属性，曲线将叠加显示。
@@ -113,16 +113,16 @@
 
 ![Placing two keys 270 degrees apart when using Quaternion interpolation will cause the interpolated value to go the other way around, which is only 90 degrees. The magenta curve is what is actually shown in the animation window. The true interpolation of the object is represented by the yellow dotted line in this screenshot, but does not actually appear in the editor.](https://docs.unity3d.com/550/Documentation/uploads/Main/AnimationEditorQuaternionInterpolation.png)
 <!-- > Placing two keys 270 degrees apart when using Quaternion interpolation will cause the interpolated value to go the other way around, which is only 90 degrees. The magenta curve is what is actually shown in the animation window. The true interpolation of the object is represented by the yellow dotted line in this screenshot, but does not actually appear in the editor. -->
-> 使用四元数 Quaternion 插值，设置两个相差 270 度的控制点，将导致插值执行另一个路径，实际上只有 90 度。动画视图中现实的是洋红色曲线。在这张截图中，对象真正的插值用黄色点线表示，并不会真正显示在编辑器中。
+> 使用四元数 Quaternion 插值，设置两个相差 270 度的关键点，将导致插值执行另一个路径，实际上只有 90 度。动画视图中现实的是洋红色曲线。在这张截图中，对象真正的插值用黄色点线表示，并不会真正显示在编辑器中。
 
 <!-- When using Quaternion interpolation for rotation, changing the keys or tangents of either the x, y or z curve may also change the values of the other two curves, since all three curves are created from the internal Quaternion representation. When using Quaternion interpolation, keys are always linked, so that creating a key at a specific time for one of the three curves (x, y or z) will also create a key at that time for the other two curves. -->
-当使用四元数 Quaternion 插值类型表示旋转角度时，改变控制点，或者 x、y、z 曲线之一的切线，可能会改变另外两条曲线的值，因为这 3 条曲线是由内部的四元数 Quaternion 创建的。当使用四元数 Quaternion 插值类型时，控制点之间是关联的，所以，在某个特定时间点，为 3 条曲线中的一条（x、y 或 z）创建控制点时，将同时为两外两条曲线创建控制点。
+当使用四元数 Quaternion 插值类型表示旋转角度时，改变关键点，或者 x、y、z 曲线之一的切线，可能会改变另外两条曲线的值，因为这 3 条曲线是由内部的四元数 Quaternion 创建的。当使用四元数 Quaternion 插值类型时，关键点之间是关联的，所以，在某个特定时间点，为 3 条曲线中的一条（x、y 或 z）创建关键点时，将同时为两外两条曲线创建关键点。
 
 <!-- ### Euler Angles Interpolation -->
 ### 欧拉角 Euler Angles 插值
 
 <!-- Euler Angles interpolation is what most people are used to working with. Euler Angles can represent arbitrary large rotations and the **.x**, **.y**, and **.z** curves are independent from each other. Euler Angles interpolation can be subject to artifacts such as Gimbal Lock when rotating around multiple axes at the same time, but are intuitive to work with for simple rotations around one axis at a time. When Euler Angles interpolation is used, Unity internally bakes the curves into the Quaternion representation used internally. This is similar to what happens when importing animation into Unity from external programs. Note that this curve baking may add extra keys in the process and that tangents with the **Constant** tangent type may not be completely precise at a sub-frame level. -->
-大多数人使用的其实是欧拉角 Euler Angles 插值。欧拉角 Euler Angles 可以表示任意大的旋转角度，并且，**.x**、**.y** 和 **.z** 曲线是彼此独立的。当同时围绕多个坐标轴旋转时，欧拉角 Euler Angles 插值可以基于某个物体，例如万向节死锁 Gimbal Lock，但是可以一次只围绕一条坐标轴旋转，更加简单和符合直觉。有点类似于从外部程序导入动画到 Unity 中。需要注意的是，当烘培曲线时可能添加额外的控制点，并且，在子桢中，常量类型的切线可能不完全精确。
+大多数人使用的其实是欧拉角 Euler Angles 插值。欧拉角 Euler Angles 可以表示任意大的旋转角度，并且，**.x**、**.y** 和 **.z** 曲线是彼此独立的。当同时围绕多个坐标轴旋转时，欧拉角 Euler Angles 插值可以基于某个物体，例如万向节死锁 Gimbal Lock，但是可以一次只围绕一条坐标轴旋转，更加简单和符合直觉。有点类似于从外部程序导入动画到 Unity 中。需要注意的是，当烘培曲线时可能添加额外的关键点，并且，在子桢中，常量类型的切线可能不完全精确。
 
 
 
