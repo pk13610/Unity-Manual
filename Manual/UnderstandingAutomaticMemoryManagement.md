@@ -7,7 +7,7 @@
 # 理解自动内存管理
 
 <!-- When an object, string or array is created, the memory required to store it is allocated from a central pool called the **heap**. When the item is no longer in use, the memory it once occupied can be reclaimed and used for something else. In the past, it was typically up to the programmer to allocate and release these blocks of heap memory explicitly with the appropriate function calls. Nowadays, runtime systems like Unity’s Mono engine manage memory for you automatically. Automatic memory management requires less coding effort than explicit allocation/release and greatly reduces the potential for memory leakage (the situation where memory is allocated but never subsequently released). -->
-当创建一个对象、字符串或数组时，会从名为**堆**的中央池中分配一块内存，用来所存储创建的值。当这些值不再被使用时，被占用的内存可以被回收，并用于存储其他的值。在过去，是由程序员显示地调用相应的函数分配和释放堆内存。如今，像 Unity Mono 引擎这样的运行时系统，可以自动地管理内容。相比显示地分配和释放内存，自动内存管理需要的编码工作更少，并且大大降低了发生内存泄露的可能性（例如，分配内存后一直不释放的情况）。
+当创建一个对象、字符串或数组时，会从名为 **堆** 的中央池中分配一块内存，用来所存储创建的值。当这些值不再被使用时，被占用的内存可以被回收，并用于存储其他的值。在过去，是由程序员显示地调用相应的函数分配和释放堆内存。如今，像 Unity Mono 引擎这样的运行时系统，可以自动地管理内容。相比显示地分配和释放内存，自动内存管理需要的编码工作更少，并且大大降低了发生内存泄露的可能性（例如，分配内存后一直不释放的情况）。
 
 <!-- ## Value and Reference Types -->
 ## 值和引用类型
@@ -202,9 +202,9 @@ function RandomList(arrayToFill: float[]) {
 <!-- ## Requesting a Collection -->
 ## 请求一个集合
 
-As mentioned above, it is best to avoid allocations as far as possible. However, given that they can’t be completely eliminated, there are two main strategies you can use to minimise their intrusion into gameplay:-
+<!-- As mentioned above, it is best to avoid allocations as far as possible. However, given that they can’t be completely eliminated, there are two main strategies you can use to minimise their intrusion into gameplay:- -->
 
-如上锁住，最好是尽可能地避免分配。但是，鉴于不可能完全消除分配的事实，有两种主要策略可以最小化分配对游戏的影响：
+如上所述，最好是尽可能地避免分配。但是，鉴于不可能完全消除分配的事实，有两种主要策略可以最小化分配对游戏的影响：
 
 <!-- ### Small heap with fast and frequent garbage collection -->
 ### 快节奏地分配小堆 + 频繁地内存回收

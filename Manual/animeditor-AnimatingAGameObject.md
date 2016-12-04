@@ -1,6 +1,6 @@
 <!-- Unity Manual > Animation > Animation Clips > Animation Window Guide > Animating a Game Object -->
 
-# Animating a Game Object
+<!-- # Animating a Game Object -->
 # 让游戏对象动起来
 
 <!-- Once you have saved the new Animation clip Asset, you are ready to begin adding keyframes to the clip. To begin editing an Animation Clip for the selected Game Object, click on the Animation Record button. This will enter Animation Record Mode, where changes to the Game Object are recorded into the Animation Clip. -->

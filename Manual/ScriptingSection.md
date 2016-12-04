@@ -1,5 +1,5 @@
 <!-- Unity Manual > Scripting -->
-Unity 手册 > 脚本
+<!-- Unity 手册 > 脚本 -->
 
 <!-- # Scripting -->
 # 脚本
@@ -16,4 +16,4 @@ Unity 手册 > 脚本
 相关教程：[脚本](https://unity3d.com/learn/tutorials/topics/scripting)
 
 <!-- See the [Knowledge Base Compiler Script Errors section](https://support.unity3d.com/hc/en-us/categories/201242676-Scripting) for troubleshooting, tips and tricks. -->
-请参阅章节[脚本编译错误](https://support.unity3d.com/hc/en-us/categories/201242676-Scripting)，介绍了故障排除、技巧和窍门。
+请参阅章节 [脚本编译错误](https://support.unity3d.com/hc/en-us/categories/201242676-Scripting)，介绍了故障排除、技巧和窍门。
