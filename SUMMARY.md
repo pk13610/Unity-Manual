@@ -40,4 +40,7 @@
             * [让游戏对象动起来](Manual/animeditor-AnimatingAGameObject.md)
             * [使用动画曲线](Manual/animeditor-AnimationCurves.md)
             * [编辑动画曲线](Manual/EditingCurves.md)
+    * [动画控制器](Manual/AnimatorControllers.md)
+        - [动画控制器资源](Manual/Animator.md)
+        - [动画控制器视图](Manual/AnimatorWindow.md)
 
