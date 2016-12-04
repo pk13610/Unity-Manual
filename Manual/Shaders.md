@@ -6,7 +6,7 @@
 # 材质、着色器、纹理
 
 <!-- Rendering in Unity is done with **Materials**, **Shaders** and **Textures**. -->
-在 Unity 中，渲染通过**材质**、**着色器**和**纹理**完成。
+在 Unity 中，渲染通过 **材质**、**着色器** 和 **纹理** 完成。
 
 <!-- There is a close relationship between Materials, Shaders and Textures in Unity. -->
 在 Unity 中，材质、着色器和纹理之间的关系非常紧密。
@@ -24,7 +24,7 @@
 一个材质只能使用一个着色器，这个着色器决定了材质中的哪些选项是有效的。一个着色器指定一个或多个希望使用的纹理变量，在材质的检视视图中，你可以为这些纹理变量指定纹理资源。
 
 <!-- For most normal rendering - by which we mean characters, scenery, environments, solid and transparent objects, hard and soft surfaces etc., the [Standard Shader](http://docs.unity3d.com/Manual/shader-StandardShader.html) is usually the best choice. This is a highly customisable shader which is capable of rendering many types of surface in a highly realistic way. -->
-对于大多数渲染 — 角色、场景、环境、固体、透明物体、坚硬外表、柔软外表等，[标准着色器](http://docs.unity3d.com/Manual/shader-StandardShader.html)往往是最佳选择。这是一种可高度定制的着色器，可以非常逼真地渲染很多种外表类型。
+对于大多数渲染 — 角色、场景、环境、固体、透明物体、坚硬外表、柔软外表等，[标准着色器](http://docs.unity3d.com/Manual/shader-StandardShader.html) 往往是最佳选择。这是一种可高度定制的着色器，可以非常逼真地渲染很多种外表类型。
 
 <!-- There are other situations where a different built-in shader, or even a custom written shader might be appropriate - such as liquids, foliage, refractive glass, particle effects, cartoony, illustrative or other artistic effects, or other special effects like night vision, heat vision or x-ray vision, etc. -->
 而在某些情况下，使用其他内置着色器，甚至是自定义着色器，可能更加合适 — 例如，液体、植物、玻璃折射、粒子效果、卡通化或者其他艺术效果，或者其他特技效果，例如，夜视仪、热成像仪或 X 光透视。

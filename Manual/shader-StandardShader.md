@@ -9,7 +9,7 @@
 Unity 标准着色器是一个内置着色器，具有全面的功能。它可以用于渲染『真实世界』的对象，例如，石头、木材、玻璃、塑料和金属，并支持各种各样的着色器类型和组合。通过使用或不使用材质编辑器中的各种纹理插槽和参数，可以简单地启动或禁用其功能。
 
 <!-- The Standard Shader also incorporates an advanced lighting model called **Physically Based Shading**. Physically Based Shading (PBS) simulates the interactions between materials and light in a way that mimics reality. PBS has only recently become possible in real-time graphics. It works at its best in situations where lighting and materials need to exist together intuitively and realistically. -->
-标准着色起还包括一个称为**物理着色器（Physically Based Shading，PBS）**的高级光照模型。物理着色器以模拟真实世界的方式模拟材质和光照之间的相互作用。物理着色器最近才在实时图形中变为可能。最适合物理着色器的场景是，光照和材质需要直观并真实地共存时。
+标准着色起还包括一个称为 **物理着色器（Physically Based Shading，PBS）** 的高级光照模型。物理着色器以模拟真实世界的方式模拟材质和光照之间的相互作用。物理着色器最近才在实时图形中变为可能。最适合物理着色器的场景是，光照和材质需要直观并真实地共存时。
 
 <!-- The idea behind our Physically Based Shader is to create a user-friendly way of achieving a consistent, plausible look under different lighting conditions. It models how light behaves in reality, without using multiple ad-hoc models that may or may not work. To do so, it follows principles of physics, including energy conservation (meaning that objects never reflect more light than they receive), Fresnel reflections (all surfaces become more reflective at grazing angles), and how surfaces occlude themselves (what is called Geometry Term), among others. -->
 物理着色器背后的想法是，在不同光照条件下，以用户友好的方式，实现一致、可信的视觉效果。它模拟了光照在真实世界中的行为，并且不需要使用其他特殊模型（不管特殊模型可以运行或不可运行）。为此，物理着色器遵循物理学法则，包括能量守恒（对象反射的光永远不会超过接收的光）、菲涅尔反射（所有表面在掠射角时反射更多的光），和表面如何闭合自身（几何术语）。
@@ -31,7 +31,7 @@ Unity 标准着色器是一个内置着色器，具有全面的功能。它可�
 在谈论 Unity 的物理着色器时，有许多概念非常有用。包括：
 
 <!-- * **Energy conservation** - This is a physics-based concept that ensures objects never reflect more light than they receive. The more specular a material is, the less diffuse it should be; the smoother a surface is, the stronger and smaller the highlight gets. -->
-* **能量守恒** - 这是一个物理概念，确保对象反射的光不会超过接收的光。材质越接近镜面，散射的光越少；表面越光滑，反射的光越强，反射的光束越小。
+* **能量守恒** —— 这是一个物理概念，确保对象反射的光不会超过接收的光。材质越接近镜面，散射的光越少；表面越光滑，反射的光越强，反射的光束越小。
 
 ![The light rendered at each point on a surface is calculated to be the same as the amout of light received from its environment. The microfacets of rough surfaces are affected by light from a wider area. Smoother surfaces give stronger and smaller highlights. Point A reflects light from the source towards the camera. Point B takes on a blue tint from ambient light from the sky. Point C takes its ambient and reflective lighting from the surrounding ground colours.](http://docs.unity3d.com/uploads/Main/StandardShaderEnergyConservation.png)
 <!-- > The light rendered at each point on a surface is calculated to be the same as the amout of light received from its environment. The microfacets of rough surfaces are affected by light from a wider area. Smoother surfaces give stronger and smaller highlights. Point A reflects light from the source towards the camera. Point B takes on a blue tint from ambient light from the sky. Point C takes its ambient and reflective lighting from the surrounding ground colours. -->

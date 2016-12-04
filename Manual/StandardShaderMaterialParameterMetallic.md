@@ -8,7 +8,7 @@
 ![](http://docs.unity3d.com/uploads/Main/StandardShaderMetallicMode.png)
 
 <!-- When working in the **Metallic workflow** (as opposed to the Specular workflow), the the reflectivity and light response of the surface are modified by the Metallic level and the [Smoothness](http://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html) level. -->
-当使用**金属工作流程**（相对于镜面工作流程）时，表面的发射率和光照通过金属度和平滑度修改。
+当使用 **金属工作流程**（相对于镜面工作流程）时，表面的发射率和光照通过金属度和平滑度修改。
 
 [平滑度]: http://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html
 

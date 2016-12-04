@@ -6,7 +6,7 @@
 # 内容和上下文
 
 <!-- When thinking about lighting in Unity, it is handy to divide the concepts into what we call the **content** the item being lit and rendered, and the **context**, which is the lighting that exists in the scene which affects the object being lit. -->
-当考虑 Unity 中的光照时，可以非常方便地分成两个概念：**内容**和**上下文**。内容是指被渲染和照亮的物体，上下文是指存在于场景中的光照，会照亮（影响）物体。
+当考虑 Unity 中的光照时，可以非常方便地分成两个概念：**内容** 和 **上下文**。内容是指被渲染和照亮的物体，上下文是指存在于场景中的光照，会照亮（影响）物体。
 
 <!-- ## The Context -->
 ## 上下文

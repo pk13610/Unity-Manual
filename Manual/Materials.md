@@ -14,7 +14,7 @@
 ![](http://docs.unity3d.com/uploads/Main/StandardShaderNewEmptyMaterial.png)
 
 <!-- Once the Material has been created, you can apply it to an object and tweak all of its properties in the **Inspector**. To apply it to an object, just drag it from the **Project View** to any object in the **Scene** or **Hierarchy**. -->
-一旦材质被创建，你就可以把它应用到一个对象，并且在**检视试图**中修改它的所有属性。想把材质应用到一个对象上，只需要把材质从**项目视图**拖动到 **场景是图** 或 **层级视图** 中的任意对象上。
+一旦材质被创建，你就可以把它应用到一个对象，并且在 **检视试图** 中修改它的所有属性。想把材质应用到一个对象上，只需要把材质从 **项目视图** 拖动到 **场景是图** 或 **层级视图** 中的任意对象上。
 
 <!-- ## Setting Material Properties -->
 ## 设置材质属性
@@ -36,7 +36,7 @@
 ## 内置着色器
 
 <!-- In addition to the [Standard Shader](http://docs.unity3d.com/Manual/shader-StandardShader.html), there are a number of other categories of built-in shaders for specialised purposes: -->
-除了[标准着色器](http://docs.unity3d.com/Manual/shader-StandardShader.html)，还是许多其他类型的内置着色器，用于不同的用途：
+除了 [标准着色器](http://docs.unity3d.com/Manual/shader-StandardShader.html)，还是许多其他类型的内置着色器，用于不同的用途：
 
 <!-- 
 * **FX**: Lighting and glass effects.

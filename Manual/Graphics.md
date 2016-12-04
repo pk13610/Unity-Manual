@@ -17,7 +17,7 @@ Unity 为你的游戏提供符合直觉的实时全局光照和基于物理的�
 本章将介绍光照、摄像机、材质、着色、纹理、粒子效果和视觉效果等内容。
 
 <!-- See also the Knowledge Base [Graphics](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics) section. -->
-另外，请参阅[图形知识库](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics)。
+另外，请参阅 [图形知识库](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics)。
 
 <!-- There are also many useful graphics tutorials in the Tutorials section. -->
 在教程部分还有许多有用的图形教程。
@@ -27,4 +27,4 @@ Unity 为你的游戏提供符合直觉的实时全局光照和基于物理的�
 **相关教程：**[图形](https://unity3d.com/learn/tutorials/topics/graphics)
 
 <!-- See the [Knowledge Base Graphics](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics) section for troubleshooting, tips and tricks. -->
-有关故障排查、提示和技巧的内容，请参阅[图形知识库](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics)。
+有关故障排查、提示和技巧的内容，请参阅 [图形知识库](https://support.unity3d.com/hc/en-us/categories/200434305-Graphics)。

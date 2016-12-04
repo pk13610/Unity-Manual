@@ -10,7 +10,7 @@
 > 一个具有默认参数并且未分配值和纹理的标准着色器材质。参数『渲染模式』被突出显示。
 
 <!-- The first Material Parameter in the Standard Shader is **Rendering Mode**. This allows you to choose whether the object uses transparency, and if so, which type of blending mode to use. -->
-标准着色器的第一个参数是**渲染模式**。该参数描述对象是否透明。
+标准着色器的第一个参数是 **渲染模式**。该参数描述对象是否透明。
 
 <!-- 
 * **Opaque** - Is the default, and suitable for normal solid objects with no transparent areas.
