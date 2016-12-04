@@ -2,3 +2,5 @@
 
 <https://nuysoft.gitbooks.io/unity-manual/content/>
 
+<https://github.com/nuysoft/Unity-Manual>
+
