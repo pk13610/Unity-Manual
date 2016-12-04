@@ -21,6 +21,7 @@
                     * [辅助贴图（细节贴图）和细节蒙板](Manual/StandardShaderMaterialParameterDetail.md)
                     * [菲涅耳效应](Manual/StandardShaderFresnel.md)
                 * [材质图表](Manual/StandardShaderMaterialCharts.md)
+* [物理系统](Manual/PhysicsSection.md)
 * [脚本](Manual/ScriptingSection.md)
     * [脚本概述](Manual/ScriptingConcepts.md)
         * [创建和使用脚本](Manual/CreatingAndUsingScripts.md)
