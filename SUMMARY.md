@@ -43,4 +43,5 @@
     * [动画控制器](Manual/AnimatorControllers.md)
         - [动画控制器资源](Manual/Animator.md)
         - [动画控制器视图](Manual/AnimatorWindow.md)
+        - [动画状态机](Manual/AnimationStateMachines.md)
 
