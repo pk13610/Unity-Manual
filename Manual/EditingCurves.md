@@ -30,7 +30,7 @@ Unity 编辑器提供了几种不同的功能和窗口，用 **曲线** 来显�
 > 在检视视图中，声源组件的距离函数曲线。
 
 <!-- While these controls have subtle differences, the curves can be edited in exactly the same way in all of them. This page explains how to navigate and edit curves in those controls. -->
-随着这些控制方法有些微小差异，但是，所有曲线的编辑方式完全相同。本页将介绍如何在这些控制方法中导航和编辑曲线。
+虽然这些控制方法有些微小差异，但是，所有曲线的编辑方式完全相同。本页将介绍如何在这些控制方法中导航和编辑曲线。
 
 <!-- ## Adding and Moving Keys on a Curve -->
 ## 在曲线上添加和移动关键点

@@ -16,7 +16,7 @@
 > 
 > SHADER CALIBRATION SCENE
 > 
-> 周色起校准场景
+> 着色器校准场景
 > 
 > METALLIC VALUE CHARTS
 > 
