@@ -13,8 +13,8 @@
 
 例如，一个 [链条连接 Hinge Joint] 允许围绕特定点和轴线旋转，而一个 [弹簧连接 Spring Joint] 则保持物体分离并稍微拉开距离。
 
-[链条连接]: https://docs.unity3d.com/Manual/class-HingeJoint.html)
-[弹簧连接]: https://docs.unity3d.com/Manual/class-SpringJoint.html)
+[链条连接 Hinge Joint]: https://docs.unity3d.com/Manual/class-HingeJoint.html
+[弹簧连接 Spring Joint]: https://docs.unity3d.com/Manual/class-SpringJoint.html
 
 <!-- 2D joint components have **2D** at the end of the name, eg, [Hinge Joint 2D](https://docs.unity3d.com/Manual/class-HingeJoint2D.html). See [Joints 2D](https://docs.unity3d.com/Manual/Joints2D.html) for a summary of the 2D joints and useful background information. -->
 
@@ -29,4 +29,4 @@
 
 <!-- See each joint reference page for the Joint classes and for further information about their properties. -->
 
-有关连接属性的更多信息，请参考 Joint 类的参考页。
+有关连接属性的更多信息，请查看 Joint 类的参考页。
