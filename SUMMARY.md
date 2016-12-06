@@ -25,6 +25,7 @@
     * [物理系统概述](Manual/PhysicsOverview.md)
         * [刚体概述](Manual/RigidbodiesOverview.md)
         * [碰撞器](Manual/CollidersOverview.md)
+        * [连接](Manual/Joints.md)
 * [脚本](Manual/ScriptingSection.md)
     * [脚本概述](Manual/ScriptingConcepts.md)
         * [创建和使用脚本](Manual/CreatingAndUsingScripts.md)
