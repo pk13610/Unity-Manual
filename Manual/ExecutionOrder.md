@@ -106,11 +106,11 @@
 
 * **OnBecameVisible/OnBecameInvisible**
 
-    当某个对象对于任意摄像机变为可见活不可见时被调用。
+    当某个对象对于任意摄像机变为可见或不可见时被调用。
 
 * **OnWillRenderObject**
 
-    为每个摄像戏调用一次，如果该对象是可见的。
+    为每个摄像机调用一次，如果该对象是可见的。
 
 * **OnPreRender**
 
@@ -140,7 +140,7 @@
 ## 协同程序
 
 <!-- Normal coroutine updates are run after the Update function returns. A coroutine is a function that can suspend its execution (yield) until the given YieldInstruction finishes. Different uses of Coroutines: -->
-通常，协同更新在函数 Update 返回后运行。一个协同程序是一个可以暂停暂行过程的函数，当给定的 YieldInstruction 完成时继续执行。协同程序的不同用法如下：
+通常，协同更新在函数 Update 返回后运行。一个协同程序是一个可以暂停运行过程的函数，当给定的 YieldInstruction 完成时继续执行。协同程序的不同用法如下：
 
 <!-- * **yield** The coroutine will continue after all Update functions have been called on the next frame.
 * **yield WaitForSeconds** Continue after a specified time delay, after all Update functions have been called for the frame

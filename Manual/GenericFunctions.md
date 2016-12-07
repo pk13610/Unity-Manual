@@ -17,7 +17,7 @@ function FuncName.<T>(): T;
 ```
 
 <!-- These are known as generic functions. The significance they have for scripting is that you get to specify the types of parameters and/or the return type when you call the function. In JavaScript, this can be used to get around the limitations of dynamic typing:- -->
-这些被称为是泛型函数。他们的意义在于指定了参数类型和（或）返回类型。在 JavaScript 中，泛型函数可以避开动态类型的局限性：
+这些被称为是泛型函数。他们的意义在于指定参数类型和（或）返回类型。在 JavaScript 中，泛型函数可以避开动态类型的局限性：
 
 ```js
 // The type is correctly inferred since it is defined in the function call.

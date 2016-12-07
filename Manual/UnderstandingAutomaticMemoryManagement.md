@@ -22,10 +22,10 @@
 ## 分配和垃圾回收
 
 <!-- The memory manager keeps track of areas in the heap that it knows to be unused. When a new block of memory is requested (say when an object is instantiated), the manager chooses an unused area from which to allocate the block and then removes the allocated memory from the known unused space. Subsequent requests are handled the same way until there is no free area large enough to allocate the required block size. It is highly unlikely at this point that all the memory allocated from the heap is still in use. A reference item on the heap can only be accessed as long as there are still reference variables that can locate it. If all references to a memory block are gone (ie, the reference variables have been reassigned or they are local variables that are now out of scope) then the memory it occupies can safely be reallocated. -->
-内存管理器会一直堆的状态，知道哪些区域是闲置的。当一个请求一块新的内存区域时（意味着一个新对象被创建），管理器从闲置区域中选择一块，并从限制区域中移除它。后续的请求被执行同样的处理，直到闲置区域不足以满足请求的尺寸。所有堆内存都被使用的可能性极小。堆上的引用类型只能通过引用变量访问，如果对某块内存区域的引用全都消失了（例如，引用变量被重新赋值，或者它们只是局部变量并且离开了作用域），那么这块内存区域可以被安全地重新分配。
+内存管理器会一直跟踪堆的状态，知道哪些区域是闲置的。当请求一块新的内存区域时（意味着一个新对象被创建），管理器从闲置区域中选择一块，并从闲置区域中移除它。后续的请求被执行同样的处理，直到闲置区域不足以满足请求的尺寸。所有堆内存都被使用的可能性极小。堆上的引用类型只能通过引用变量访问，如果对某块内存区域的引用全都消失了（例如，引用变量被重新赋值，或者它们只是局部变量并且离开了作用域），那么这块内存区域可以被安全地重新分配。
 
 <!-- To determine which heap blocks are no longer in use, the memory manager searches through all currently active reference variables and marks the blocks they refer to as “live”. At the end of the search, any space between the live blocks is considered empty by the memory manager and can be used for subsequent allocations. For obvious reasons, the process of locating and freeing up unused memory is known as garbage collection (or GC for short). -->
-为了确定哪些区域不再被使用，内存管理器会遍历当前所有有效的引用变量，并把他们所引用的区域标记为『活动』。遍历结束后，为被标记为『活动』的区域都被内存管理器认为是闲置的，可以用于后续的分配。定位和释放内存的过程被直观地称为垃圾回收（简写为 GC）。
+为了确定哪些区域不再被使用，内存管理器会遍历当前所有有效的引用变量，并把他们所引用的区域标记为『活动』。遍历结束后，未被标记为『活动』的区域都被内存管理器认为是闲置的，可以用于后续的分配。定位和释放内存的过程被直观地称为垃圾回收（简写为 GC）。
 
 <!-- ## Optimization -->
 ## 优化
@@ -100,7 +100,7 @@ function Update() {
 ```
 
 <!-- …will allocate new strings each time Update is called and generate a constant trickle of new garbage. Most of that can be saved by updating the text only when the score changes: -->
-每次是 Update 被调用，将分配一个新字符串，以恒定地速率产生新垃圾。通常我们可以这样优化这种情况：只有当比分更新时，才更新文本。
+每次 Update 被调用，将分配一个新字符串，以恒定地速率产生新垃圾。通常我们可以这样优化这种情况：只有当比分更新时，才更新文本。
 
 ```
 //C# script example
@@ -141,7 +141,7 @@ function Update() {
 <!-- Another potential problem occurs when a function returns an array value: -->
 当函数返回数组时，会引发另外一个潜在问题：
 
-```
+```c#
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -157,8 +157,9 @@ public class ExampleScript : MonoBehaviour {
         return result;
     }
 }
+```
 
-
+```js
 //JS script example
 function RandomList(numElements: int) {
     var result = new float[numElements];
@@ -226,9 +227,10 @@ if (Time.frameCount % 30 == 0)
 ### 慢节奏地分配大堆 + 不频繁地内存回收
 
 <!-- This strategy works best for games where allocations (and therefore collections) are relatively infrequent and can be handled during pauses in gameplay. It is useful for the heap to be as large as possible without being so large as to get your app killed by the OS due to low system memory. However, the Mono runtime avoids expanding the heap automatically if at all possible. You can expand the heap manually by preallocating some placeholder space during startup (ie, you instantiate a “useless” object that is allocated purely for its effect on the memory manager): -->
+
 这种策略对于分配和回收相对不频繁、可以在游戏暂停期间处理的游戏非常有效。在分配尽可能大的堆后，有些操作系统会因为系统内存不足而杀死应用，这种策略对于不会杀死应用的操作系统非常有用。不过，Mono 在运行时会尽可能不自动去扩展堆大小。你可以在启动时通过预分配占位空间的方式，手动扩展堆大小（例如，初始化一个纯粹是为了分配内存空间的无用对象）：
 
-```
+```c#
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -245,8 +247,9 @@ public class ExampleScript : MonoBehaviour {
         tmp = null;
     }
 }
+```
 
-
+```js
 //JS script example
 function Start() {
     var tmp = new System.Object[1024];
@@ -274,11 +277,11 @@ System.GC.Collect();
 ## 可复用的对象池
 
 <!-- There are many cases where you can avoid generating garbage simply by reducing the number of objects that get created and destroyed. There are certain types of objects in games, such as projectiles, which may be encountered over and over again even though only a small number will ever be in play at once. In cases like this, it is often possible to reuse objects rather than destroy old ones and replace them with new ones. -->
-在很多情况下，你可以简单地通过减少需要创建和销毁的对象数量来避免产生垃圾。游戏中某些类型的对象，例如射弹，它们可能在会反复出现，但是每次只会出现少数几个。在这种情况下，复用对象通常是可行的，而不是先销毁旧对象，然后创建先对象替换它们。
+在很多情况下，你可以简单地通过减少需要创建和销毁的对象数量来避免产生垃圾。游戏中某些类型的对象，例如射弹，它们可能在会反复出现，但是每次只会出现少数几个。在这种情况下，复用对象通常是可行的，而不是先销毁旧对象，然后创建新对象替换它们。
 
 <!-- ## Further Information -->
 
 ## 补充信息
 
 <!-- Memory management is a subtle and complex subject to which a great deal of academic effort has been devoted. If you are interested in learning more about it then [memorymanagement.org](http://www.memorymanagement.org/) is an excellent resource, listing many publications and online articles. Further information about object pooling can be found on the [Wikipedia page](http://en.wikipedia.org/wiki/Object_pool_pattern) and also at [Sourcemaking.com](http://sourcemaking.com/design_patterns/object_pool). -->
-内存管理是一个精细而复杂的课题，已经投入了大量学术上的努力。如果你有兴趣了解更多内容，[memorymanagement.org](http://www.memorymanagement.org/) 是一个很好的资源，上面列出了许多出版物和网上的文章。关于对象池的更多信息，你可以在 [Wikipedia page](http://en.wikipedia.org/wiki/Object_pool_pattern) 和 [Sourcemaking.com](http://sourcemaking.com/design_patterns/object_pool) 上找到。
+内存管理是一个精细而复杂的课题，已经投入了大量学术上的努力。如果你有兴趣了解更多内容，[memorymanagement.org](http://www.memorymanagement.org/) 是一个很好的资源，上面列出了许多出版物和网络文章。关于对象池的更多信息，你可以在 [Wikipedia page](http://en.wikipedia.org/wiki/Object_pool_pattern) 和 [Sourcemaking.com](http://sourcemaking.com/design_patterns/object_pool) 上找到。

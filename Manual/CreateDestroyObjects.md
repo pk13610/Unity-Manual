@@ -22,7 +22,7 @@ void Start() {
 ```
 
 <!-- Note that the object from which the copy is made doesn’t have to be present in the scene. It is more common to use a prefab dragged to a public variable from the Project panel in the editor. Also, instantiating a GameObject will copy all the Components present on the original. -->
-需要注意的是，被复制的原始对象不一定必须是场景中的对象。比较常见的是，将一个预知对象拖动到编辑器 Project 面板的一个公共变量上。而且，初始化一个游戏对象将复制原始对象上的所有组件。
+需要注意的是，被复制的原始对象不一定必须是场景中的对象。比较常见的是，将一个预制对象拖动到编辑器项目视图的一个公共变量上。而且，初始化一个游戏对象将复制原始对象上的所有组件。
 
 <!-- There is also a [Destroy] function that will destroy an object after the frame update has finished or optionally after a short time delay: -->
 还有一个 Destroy 函数用于在桢更新完成之后或者一段可选的短暂延迟之后销毁对象：

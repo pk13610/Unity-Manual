@@ -20,4 +20,4 @@ Unity 的动画特性包含重定向动画、运行时动画权重控制、事�
 **相关教程：**[Animation](http://unity3d.com/learn/tutorials/topics/animation)
 
 <!-- See the [Knowledge Base Animation section](https://support.unity3d.com/hc/en-us/sections/201271005-Animation) for tips, tricks and troubleshooting. -->
-一些技巧、常见问题，请查看[动画基础知识](https://support.unity3d.com/hc/en-us/sections/201271005-Animation)。
+一些技巧、常见问题，请查看 [动画基础知识](https://support.unity3d.com/hc/en-us/sections/201271005-Animation)。
