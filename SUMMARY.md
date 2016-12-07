@@ -30,6 +30,7 @@
 * [脚本](Manual/ScriptingSection.md)
     * [脚本概述](Manual/ScriptingConcepts.md)
         * [创建和使用脚本](Manual/CreatingAndUsingScripts.md)
+        * [变量和检视视图](Manual/VariablesAndTheInspector.md)
         * [创建和销毁游戏对象](Manual/CreateDestroyObjects.md)
         * [特殊文件夹和脚本的编译顺序](Manual/ScriptCompileOrderFolders.md)
         * [事件函数执行顺序](Manual/ExecutionOrder.md)
