@@ -1,3 +1,10 @@
 {
-	"plugins": ["-fontsettings", "toggle-chapters"]
+	"plugins": ["-fontsettings", "toggle-chapters", "rss"],
+	"pluginsConfig": {
+		"rss": {
+			"title": "Unity 5.5 手册（中文版）",
+			"site_url": "https://nuysoft.gitbooks.io/unity-manual/content/",
+			"feed_url": "https://nuysoft.gitbooks.io/unity-manual/content/rss.xml"
+		}
+	}
 }
