@@ -4,6 +4,8 @@
 * [Unity 手册](Manual/UnityManual.md)
 * [图形](Manual/Graphics.md)
     * [图形概述](Manual/GraphicsOverview.md)
+        * [光照](Manual/LightingOverview.md)
+            * [光照概述](Manual/LightingInUnity.md)
         * [材质、着色器、纹理](Manual/Shaders.md)
             * [创建和使用材质](Manual/Materials.md)
             * [标准着色器](Manual/shader-StandardShader.md)
