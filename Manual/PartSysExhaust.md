@@ -35,7 +35,7 @@ You can position the exhaust particle system by placing it on a child object of 
 
 You can vary the emission rate very easily from a script. If you have a variable in the script that represents the engine revs or the speed of the vehicle then you can simply multiply this value by a constant and assign the result to the ParticleSystem’s emissionRate property.
 
-```c#
+```cs
 // C#
 
 using UnityEngine;

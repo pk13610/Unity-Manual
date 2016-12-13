@@ -141,7 +141,7 @@ function Update() {
 <!-- Another potential problem occurs when a function returns an array value: -->
 当函数返回数组时，会引发另外一个潜在问题：
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -230,7 +230,7 @@ if (Time.frameCount % 30 == 0)
 
 这种策略对于分配和回收相对不频繁、可以在游戏暂停期间处理的游戏非常有效。在分配尽可能大的堆后，有些操作系统会因为系统内存不足而杀死应用，这种策略对于不会杀死应用的操作系统非常有用。不过，Mono 在运行时会尽可能不自动去扩展堆大小。你可以在启动时通过预分配占位空间的方式，手动扩展堆大小（例如，初始化一个纯粹是为了分配内存空间的无用对象）：
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;

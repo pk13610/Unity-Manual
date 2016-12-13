@@ -14,7 +14,7 @@
 
 [Update]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
 
-```c#
+```cs
 void Update() {
     float distance = speed * Time.deltaTime * Input.GetAxis("Horizontal");
     transform.Translate(Vector3.right * distance);
@@ -27,7 +27,7 @@ void Update() {
 
 [FixedUpdate]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
 
-```c#
+```cs
 void FixedUpdate() {
     Vector3 force = transform.forward * driveForce * Input.GetAxis("Vertical");
     rigidbody.AddForce(force);
@@ -42,7 +42,7 @@ void FixedUpdate() {
 
 [LateUpdate]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html
 
-```c#
+```cs
 void LateUpdate() {
     Camera.main.transform.LookAt(target.transform);
 }
@@ -68,7 +68,7 @@ Unity 提供了一套 GUI 控件渲染系统，用于控制场景中的主要操
 
 [OnGUI]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnGUI.html
 
-```c#
+```cs
 void OnGUI() {
     GUI.Label(labelRect, "Game Over");
 }
@@ -95,7 +95,7 @@ void OnGUI() {
 [OnTriggerStay]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerStay.html
 [OnTriggerExit]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerExit.html
 
-```c#
+```cs
 void OnCollisionEnter(otherObj: Collision) {
     if (otherObj.tag == "Arrow") {
         ApplyDamage(10);

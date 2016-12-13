@@ -9,7 +9,7 @@ The most common use of a Ray from the camera is to perform a raycast out into th
 
 C# script example:
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 
@@ -48,7 +48,7 @@ It is sometimes useful to get a ray corresponding to a screen position and then 
 
 C# script example:
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

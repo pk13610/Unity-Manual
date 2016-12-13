@@ -9,7 +9,7 @@
 
 举个例子，假设有一个逐渐向前移动对象的任务，每桢移动一次。开始时，你可能只是使对象每桢移动一个固定距离：
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -37,7 +37,7 @@ function Update() {
 但是，因为桢时间不是恒定的，所以对象看起来将以不规则的速度移动。如果桢时间是 10 毫秒，那么该对象每秒向前移动 100 步 distancePerFrame。但是，如果桢时间增加到 25 毫秒（例如由于 CPU 负载），那么只会每秒向前移动 40 步，因此移动距离更短。解决方案是按照桢时间适配移动距离，可以从 Time.deltaTime 属性读取桢时间：
 
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -101,7 +101,7 @@ function Update() {
 
 时间管理器提供了一个可全局设置时间尺度的属性，不过，通常是在脚本中使用 Time.timeScale 属性设置时间尺度：
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;
@@ -139,7 +139,7 @@ function Resume() {
 
 幸运的是，Unity 提供了一个捕获帧率 Capture Framerate 属性来解决这个问题。当该属性的值被设置为非 0 时，游戏速度将降低，桢更新将以精确的时间间隔定期执行。两桢之间的间隔等于 `1 / Time.captureFramerate`，因此，如果该值被设置为 5.0，那么桢更新每 1/5 秒发生一次。随着帧率的有效降低，Update 函数有充足的时间来保存屏幕截图或执行其他行为。
 
-```c#
+```cs
 //C# script example
 using UnityEngine;
 using System.Collections;

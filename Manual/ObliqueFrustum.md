@@ -8,7 +8,7 @@ By default, the view frustum is arranged symmetrically around the camera’s cen
 
 While the camera class doesn’t have functions to set the obliqueness of the frustum, it can be done quite easily by altering the projection matrix:
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

@@ -49,7 +49,7 @@ Unity 内置支持两种编程语言：
 <!-- The initial contents of the file will look something like this: -->
 脚本文件的初始内容会是这个样子：
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

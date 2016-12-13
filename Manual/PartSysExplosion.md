@@ -30,7 +30,7 @@ A final thing to note is that as the particles move away from the centre of the 
 
 During testing, it is useful to have the _Looping_ property switched on so you can see the explosion repeatedly but in the finished game, you should switch this off so the explosion happens only once. When the explosion is designed for an object that has the potential to explode (a fuel tank, say) you might want to add the Particle System component to the object with the _Play On Awake_ property disabled. You can then set off the explosion from a script as necessary.
 
-```c#
+```cs
     void Explode() {
         var exp = GetComponent<ParticleSystem>();
         exp.Play();
@@ -40,7 +40,7 @@ During testing, it is useful to have the _Looping_ property switched on so you c
 
 In other cases, explosions happen at points of impact. If the explosion originates from an object (eg, a grenade) then you could call the Explode function detailed above after a time delay or when it makes contact with the target.
 
-```c#
+```cs
     // Grenade explodes after a time delay.
     public float fuseTime;
 
@@ -58,7 +58,7 @@ In other cases, explosions happen at points of impact. If the explosion originat
 
 Where the explosion comes from an object that is not actually represented in the game (eg, a projectile that travels too fast to be seen), you can just instantiate an explosion in the appropriate place. You might determine the contact point from a [raycast](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html), for example.
 
-```c#
+```cs
     // On the explosion object.
     void Start() {
         var exp = GetComponent<ParticleSystem>();

@@ -9,7 +9,7 @@ When created, a Unity scene contains just a single camera and this is all you ne
 
 By default, a camera renders its view to cover the whole screen and so only one camera view can be seen at a time (the visible camera is the one that has the highest value for its _depth_ property). By disabling one camera and enabling another from a script, you can “cut” from one camera to another to give different views of a scene. You might do this, for example, to switch between an overhead map view and a first-person view.
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

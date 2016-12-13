@@ -9,7 +9,7 @@
 <!-- Some functions in the script reference (for example, the various GetComponent functions) are listed with a variant that has a letter T or a type name in angle brackets after the function name: -->
 在脚本手册中，一些函数的名称后跟有一对尖括号，尖括号中是字符 T 或类型名称：
 
-```c#
+```cs
 //C#
 void FuncName<T>();
 //JS
@@ -30,7 +30,7 @@ var obj = GetComponent.<Rigidbody>();
 <!-- In C#, it can save a lot of keystrokes and casts: -->
 在 C# 中，泛型函数可以节省大量的按键：
 
-```c#
+```cs
 Rigidbody rb = go.GetComponent<Rigidbody>();
 
 // ...as compared with:

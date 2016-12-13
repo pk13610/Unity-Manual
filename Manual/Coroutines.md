@@ -27,7 +27,7 @@ void Fade() {
 
 协程就像一个函数，它能够暂停执行并将控制权返回给 Unity，但是在下一桢时，可以在暂停的位置继续执行。在 C# 中，可以像这样声明协程：
 
-```c#
+```cs
 IEnumerator Fade() {
     for (float f = 1f; f >= 0; f -= 0.1f) {
         Color c = renderer.material.color;
@@ -44,7 +44,7 @@ IEnumerator Fade() {
 
 [StartCoroutine]: https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html
 
-```c#
+```cs
 void Update() {
     if (Input.GetKeyDown("f")) {
         StartCoroutine("Fade");
@@ -87,7 +87,7 @@ function Update() {
 
 默认情况下，协程在 `yield` 之后的桢中恢复，不过也可以使用 `WaitForSeconds` 延迟恢复：
 
-```c#
+```cs
 IEnumerator Fade() {
     for (float f = 1f; f >= 0; f -= 0.1f) {
         Color c = renderer.material.color;
@@ -116,7 +116,7 @@ function Fade() {
 
 协程可以把某些效果分散在一段时间内，也可以有效地优化性能。游戏中的许多任务需要定期执行，最明显的方式是将它们包含在 `Update` 函数中执行。但是 `Update` 函数通常每秒调用多次。当任务不需要如此频繁地重复时，你可以把它放入协程定期更新，而不是每桢都更新。一个例子是在敌人靠近玩家时触发警告。代码看起来可能像这样：
 
-```c#
+```cs
 function ProximityCheck() {
     for (int i = 0; i < enemies.Length; i++) {
         if (Vector3.Distance(transform.position, enemies[i].transform.position) < dangerDistance) {
@@ -132,7 +132,7 @@ function ProximityCheck() {
 
 如果有很多敌人，每桢都调用该函数可能会带来很大的开销。不过，你可以使用协程每秒调用该函数 10 次：
 
-```c#
+```cs
 IEnumerator DoCheck() {
     for(;;) {
         ProximityCheck;

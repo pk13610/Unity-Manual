@@ -14,7 +14,7 @@
 
 就像其他组件在检视视图中具有可编辑的属性一样，你也可以在检视视图中编辑脚本的属性值。
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

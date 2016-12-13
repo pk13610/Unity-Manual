@@ -12,7 +12,7 @@ An object that just fits within the frustum vertically will occupy the whole hei
 
 Creating the effect in code is a matter of saving the height of the frustum at the object’s position at the start of the zoom. Then, as the camera moves, its new distance is found and the FOV adjusted to keep it the same height at the object’s position. This can be accomplished with the following code:
 
-```c#
+```cs
 using UnityEngine;
 using System.Collections;
 

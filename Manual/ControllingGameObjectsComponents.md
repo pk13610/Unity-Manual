@@ -16,7 +16,7 @@
 
 [GetComponent]: https://docs.unity3d.com/ScriptReference/Component.GetComponent.html
 
-```c#
+```cs
 void Start () {
     Rigidbody rb = GetComponent<Rigidbody>();
 }
@@ -36,7 +36,7 @@ function Start () {
 
 一旦有了组件实例的引用，就可以像在检视视图 Inspector 中一样，设置它的属性值：
 
-```c#
+```cs
 void Start () {
     Rigidbody rb = GetComponent<Rigidbody>();
     
@@ -49,7 +49,7 @@ void Start () {
 
 一个额外特性是，脚本可以调用组件实例的函数，这在检视视图中是不可能的：
 
-```c#
+```cs
 void Start () {
     Rigidbody rb = GetComponent<Rigidbody>();
     
@@ -80,7 +80,7 @@ void Start () {
 
 查找关联对象的最直接方式是，为脚本添加一个公共的游戏对象变量：
 
-```c#
+```cs
 public class Enemy : MonoBehaviour {
     public GameObject player;
     
@@ -98,7 +98,7 @@ public class Enemy : MonoBehaviour {
 
 现在，可以从场景视图或层级视图拖动一个对象到这个变量上进行分配。然后，就可以访问这个对象的 GetComponent 函数和组件变量。因此，你可以使用下面的代码：
 
-```c#
+```cs
 public class Enemy : MonoBehaviour {
     public GameObject player;
     
@@ -113,7 +113,7 @@ public class Enemy : MonoBehaviour {
 
 另外，如果在脚本中声明了某个组件类型的公共变量，你可以拖动绑定了该组件的任意对象到该变量上。这时将直接访问组件，而不是游戏对象。
 
-```c#
+```cs
 public Transform playerTransform;
 ```
 
@@ -128,7 +128,7 @@ public Transform playerTransform;
 
 有时，一个游戏场景将使用多个相同类型的对象，例如敌人、路径和障碍物。可能需要一个特定脚本来跟踪、监督它们，或者还需要对它们进行响应（例如，用一个寻路脚本维护所有的路径）。虽然使用变量连接这些对象是一种可行的方式，但是如果每个新行路径都需要拖拽到某个脚本的变量上，将使设计过程变得非常乏味。同样，如果一个路径被删除，那么移除变量对无效对象的引用就会变成麻烦。在这样的情况下，通常最好是把它们都作为子对象放到一个父对象中，用一个对象集合来管理它们。子对象可以通过父对象的变换组件 Transform 来检索（因为所有游戏对象都隐含一个变换组件）：
 
-```c#
+```cs
 using UnityEngine;
 
 public class WaypointManager : MonoBehaviour {
@@ -149,7 +149,7 @@ public class WaypointManager : MonoBehaviour {
 
 你还可以使用 Transform.Find 函数查找特定名称的子对象：
 
-```c#
+```cs
 transform.Find("Gun");
 ```
 
@@ -166,7 +166,7 @@ transform.Find("Gun");
 
 [GameObject.Find]: https://docs.unity3d.com/ScriptReference/GameObject.Find.html
 
-```c#
+```cs
 GameObject player;
 
 void Start() {
@@ -179,7 +179,7 @@ void Start() {
 也可以使用 GameObject.FindWithTag 和 GameObject.FindGameObjectsWithTag 函数按照标签来定位对象或对象集合：
 
 
-```c#
+```cs
 GameObject player;
 GameObject[] enemies;
 

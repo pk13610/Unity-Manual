@@ -11,7 +11,7 @@
 
 [Instantiate]: http://docs.unity3d.com/ScriptReference/Object.Instantiate.html
 
-```c#
+```cs
 public GameObject enemy;
 
 void Start() {
@@ -29,7 +29,7 @@ void Start() {
 
 [Destroy]: http://docs.unity3d.com/ScriptReference/Object.Destroy.html
 
-```c#
+```cs
 void OnCollisionEnter(Collision otherObj) {
     if (otherObj.gameObject.tag == "Missile") {
         Destroy(gameObject,.5f);
@@ -40,7 +40,7 @@ void OnCollisionEnter(Collision otherObj) {
 <!-- Note that the Destroy function can destroy individual components without affecting the GameObject itself. A common mistake is to write something like: -->
 请注意，Destroy 函数可以单独销毁某些组件而不影响游戏对象本身。下面是一个常见的错误：
 
-```c#
+```cs
 Destroy(this);
 ```
 

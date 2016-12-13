@@ -16,7 +16,7 @@
 var strength: float;
 ```
 
-```c#
+```cs
 // C#
 
 [HideInInspector]
