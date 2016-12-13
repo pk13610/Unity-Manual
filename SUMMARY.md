@@ -42,6 +42,7 @@
         * [事件函数](Manual/EventFunctions.md)
         * [时间和帧数控制](Manual/TimeFrameManagement.md)
         * [创建和销毁游戏对象](Manual/CreateDestroyObjects.md)
+        * [协同程序](Manual/Coroutines.md)
         * [特殊文件夹和脚本的编译顺序](Manual/ScriptCompileOrderFolders.md)
         * [事件函数执行顺序](Manual/ExecutionOrder.md)
         * [理解自动内存管理](Manual/UnderstandingAutomaticMemoryManagement.md)
