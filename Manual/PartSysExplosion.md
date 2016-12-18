@@ -25,7 +25,7 @@
 
 <!-- Starting with the default particle system object (menu: **GameObject > Create General > Particle System**), go to the _Shape_ module and set the emitter shape to a small _Sphere_, say about 0.5 units in radius. The particles in the standard assets include a material called _Fire Add_ which is very suitable for explosions (menu: **Assets > Import Package > Particles**). You can set this material for the system using the _Renderer_ module. With the _Renderer_ open, you should also disable _Cast Shadows_ and _Receive Shadows_ since the explosion flames are supposed to give out light rather than receive it. -->
 
-从默认的粒子系统对象开始（菜单：**GameObject > Create General > Particle System**），找到 _形状 Shape_ 模块，设置发射形状为一个小 _球 Sphere_，并设置半径为 0.5 单位。粒子标准资源包中包含了一个名为 _Fire Add_ 的材质，非常适合用于爆炸（菜单：**Assets > Import Package > Particles**）。你可以使用 _Renderer_ 模块为粒子系统设置材质。展开 _Renderer_ 后，还应该禁用 _投射阴影 Cast Shadows_ and _接收阴影 Receive Shadows_，因为爆炸的火焰应该发射光而不是接收光。
+从默认的粒子系统对象开始（菜单：**GameObject > Create General > Particle System**），找到 _形状 Shape_ 模块，设置发射形状为一个小 _球 Sphere_，并设置半径为 0.5 单位。粒子标准资源包中包含了一个名为 _Fire Add_ 的材质，非常适合用于爆炸（菜单：**Assets > Import Package > Particles**）。你可以使用 _Renderer_ 模块为粒子系统设置材质。展开 _Renderer_ 后，还应该禁用 _投射阴影 Cast Shadows_ 和 _接收阴影 Receive Shadows_，因为爆炸的火焰应该发射光而不是接收光。
 
 <!-- At this stage, the system looks like lots of little fireballs being thrown out from a central point. The explosion should, of course, create a burst with lots of particles all at once. In the _Emission_ module, you can set the _Rate_ value to zero and add a single _Burst_ of particles at time zero. The number of particles in the burst will depend on the size and intensity you want your explosion to have but a good starting point is about fifty particles. With the burst set up, the system is now starting to look much more like and explosion but it is rather slow and the flames seem to hang around for a long time. In the Particle System module (which will have the same name as the GameObject, eg, “Explosion”), set both the _Duration_ of the system and the _Start Lifetime_ of the particles to two seconds. -->
 
@@ -107,7 +107,7 @@
 ```
 
 <!-- ## Further Ideas -->
-## 进一步的想法
+## 更进一步
 
 <!-- The explosion developed here is very basic but you can modify various aspects of it to get the exact feel you are looking for in your game. -->
 
@@ -119,4 +119,4 @@
 
 <!-- A few properties are set with random values here but other many properties have a _Random Between Two Constants/Curves_ option and you can use these to add variation in all sorts of ways. Varying the size and rotation helps to avoid the most obvious effects of particle repetition but you might also consider adding some randomness to the _Start Delay_, _Start Lifetime_ and _Start Speed_ properties. A small amount of variation helps to reinforce the impression of the explosion being a “natural” and unpredictable effect rather than a controlled mechanical process. Larger variations suggest a “dirty” explosion. For example, varying the _Start Delay_ will produce an explosion that is no longer sharp but bursts more slowly, perhaps because fuel tanks in a vehicle are being separately ignited. -->
 
-爆炸示例中的几个属性被设置为随机值，但是其他许多其他属性都有一个 _在两个常量/曲线之前随机 Random Between Two Constants/Curves_ 选项，你可以使用这些属性添加各种变化。改变大小和旋转可以避免最明显的粒子重复问题，你也可以考虑为 _初始延迟 Start Delay_、_初始生命周期 Start Lifetime_ 和 _初始速度 Start Speed_ 添加一些随机性。轻微的变化有助于增强爆炸效果的自然性和不可预测性，而不是受控的机械式过程。较大的变化暗示一场『放射性』爆炸。例如，改变 _初始延迟Start Delay_ 将产生不再突然、爆发更慢的爆炸，可能是因为车辆的燃油箱被单独点燃。
+爆炸示例中的几个属性被设置为随机值，但是其他许多其他属性都有一个 _在两个常量/曲线之间随机 Random Between Two Constants/Curves_ 选项，你可以使用这些属性添加各种变化。改变大小和旋转可以避免最明显的粒子重复问题，你也可以考虑为 _初始延迟 Start Delay_、_初始生命周期 Start Lifetime_ 和 _初始速度 Start Speed_ 添加一些随机性。轻微的变化有助于增强爆炸效果的自然性和不可预测性，而不是受控的机械式过程。较大的变化暗示一场『放射性』爆炸。例如，改变 _初始延迟Start Delay_ 将产生不再突然、爆发更慢的爆炸，可能是因为车辆的燃油箱被单独点燃。

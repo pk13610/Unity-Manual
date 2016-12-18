@@ -34,7 +34,7 @@
             - [使用粒子系统](Manual/PartSysUsage.md)
             - [粒子系统入门](Manual/ParticleSystemHowTo.md)
                 + [简单的爆炸](Manual/PartSysExplosion.md)
-                + [车辆废气](Manual/PartSysExhaust.md)
+                + [载具尾气](Manual/PartSysExhaust.md)
 * [物理系统](Manual/PhysicsSection.md)
     * [物理系统概述](Manual/PhysicsOverview.md)
         * [刚体概述](Manual/RigidbodiesOverview.md)
