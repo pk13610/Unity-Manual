@@ -1,9 +1,9 @@
-# Using Particle Systems in Unity
+<!-- # Using Particle Systems in Unity -->
 # 使用粒子系统
 
 <!-- Unity implements Particle Systems with a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: **GameObject > Create General > Particle System**) or adding the component to an existing GameObject (menu: **Component > Effects > Particle System**). Because the component is quite complicated, the Inspector is divided into a number of collapsible sub-sections or **modules** that each contain a group of related properties. Additionally, you can edit one or more systems at the same time using a separate Editor window accessed via the **Open Window** button in the Inspector. See documentation on the [Particle System component] and individual [Particle System modules] to learn more. -->
 
-Unity 使用一个组件实现粒子系统。在场景中放置粒子系统的常用方式是，添加一个预制的游戏对象（菜单：GameObject > Create General > Particle Syste**），或者为一个现有的游戏对象添加粒子系统组件（菜单：**Component > Effects > Particle System**）。因为该组件相当复杂，所以检视视图被分割成数个可折叠的部分或 **模块**，每个模块包含一组相关属性。另外，在检视视图中点击 **Open Window** 按钮，可以弹出单独的编辑窗口。相关信息请参阅 [粒子系统组件] 和 [粒子系统模块]。
+Unity 使用一个组件实现粒子系统。在场景中放置粒子系统的常用方式是，添加一个预制的游戏对象（菜单：**GameObject > Create General > Particle Syste**），或者为一个现有的游戏对象添加粒子系统组件（菜单：**Component > Effects > Particle System**）。因为该组件相当复杂，所以检视视图被分割成数个可折叠的部分或 **模块**，每个模块包含一组相关属性。另外，在检视视图中点击 **Open Window** 按钮，可以弹出单独的编辑窗口。相关信息请参阅 [粒子系统组件] 和 [粒子系统模块]。
 
 [Particle System component]: https://docs.unity3d.com/Manual/class-ParticleSystem.html
 [Particle System modules]: https://docs.unity3d.com/Manual/ParticleSystemModules.html

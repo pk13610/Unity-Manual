@@ -37,7 +37,7 @@
 
 <!-- As it stands, the explosion is taking shape but it looks as though it is happening out in space. The particles get thrown out and travel a long distance at constant speed before fading. If your game is set in space then this might be the exact effect you want. However, an explosion that happens in the atmosphere will be slowed and dampened by the surrounding air. Enable the _Limit Velocity Over Lifetime_ module and set the _Speed_ to about 3.0 and the _Dampen_ fraction to about 0.4 and you should see the explosion lose a little strength as it progresses. -->
 
-现在，爆炸正在形成，但是它看起来好像发生在太空中。粒子从被抛出到消失，以恒定的速度传播。如果游戏发生在天空中，那么这确实可能是你想要的效果。但是，发生在大气中的爆炸将被周围的空气阻碍并衰减。开启 _随生命周期抑制速度 Limit Velocity Over Lifetime_，设置 _速度 Speed_ 为约 3.0，_抑制 Dampen_ 分数为约 0.4，你应该看到爆炸随着进度损失一些强度。
+现在，爆炸正在形成，但是它看起来好像发生在太空中。粒子从被抛出到消失，以恒定的速度传播。如果游戏发生在太空中，那么这确实可能是你想要的效果。但是，发生在大气中的爆炸将被周围的空气阻碍并衰减。开启 _随生命周期抑制速度 Limit Velocity Over Lifetime_，设置 _速度 Speed_ 为约 3.0，设置 _抑制 Dampen_ 分数为约 0.4，你应该可以看到爆炸随着进度损失了一些强度。
 
 <!-- A final thing to note is that as the particles move away from the centre of the explosion, their individual shapes become more recognisable. In particular, seeing the particles all at the same size and with the same rotation makes it obvious that the same graphic is being reused for each particle. A simple way to avoid this is to add a bit of random variation to the size and rotation of the particles as they are generated. In the Particle System module at the top of the inspector, click the small arrow to the right of the _Start Size_ and _Start Rotation_ properties and set them both to Random Between Two Constants. For the rotation, set the two values to 0 and 360 (ie, completely random rotation). For the size, set the values to 0.5 and 1.5 to give some variation without the risk of having too many huge or tiny particles. You should now see that the repetition of particle graphics is now much less noticeable. -->
 
@@ -80,7 +80,7 @@
 
 <!-- Where the explosion comes from an object that is not actually represented in the game (eg, a projectile that travels too fast to be seen), you can just instantiate an explosion in the appropriate place. You might determine the contact point from a [raycast](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html), for example. -->
 
-当爆炸来自一个不可见的游戏对象时（例如，速度太快以至于无法看到的子弹），你可以诶在适当的位置实例化爆炸。例如，你可以用 [射线 raycast] 确定接触点。
+当爆炸来自一个不可见的游戏对象时（例如，速度太快以至于无法看到的子弹），你可以在适当的位置实例化爆炸。例如，你可以用 [射线 raycast] 确定接触点。
 
 [raycast]: http://docs.unity3d.com/ScriptReference/Physics.Raycast.html
 [射线 raycast]: http://docs.unity3d.com/ScriptReference/Physics.Raycast.html
@@ -115,7 +115,7 @@
 
 <!-- The particle graphic you use will have a big effect on how the player “reads” the explosion. Having lots of small, separately recognisable flames suggests burning pieces being thrown out. Larger particles that don’t move completely apart appear more like a fireball fed by a destroyed fuel tank. Typically, you will need to change several properties together to complete the effect. For example, the fireball will persist longer and expand less before it disappears while a sharp burst may scatter burning pieces quite some distance. -->
 
-你使用的粒子图形将极大地影响玩家如何『理解』爆炸。许多微小的、单独可识别的火焰，暗示燃烧的碎片正在被抛出。更大的、完全不可移动的部分，看起来更像是由被破坏的燃料箱产生的火球。通常，你需要同时更改多个属性才能实现这种效果。例如，火球在消失前将持续更长的时间和较小的膨胀，而剧烈的爆炸可能在相当一段距离内散布燃烧的碎片。
+所使用的粒子图形将极大地影响玩家如何『理解』爆炸。许多微小的、单独可识别的火焰，暗示燃烧的碎片正在被抛出。更大的、完全不可移动的部分，看起来更像是由被破坏的燃料箱产生的火球。通常，你需要同时更改多个属性才能实现这种效果。例如，火球在消失前将持续更长的时间和较小的膨胀，而剧烈的爆炸可能在相当一段距离内散布燃烧的碎片。
 
 <!-- A few properties are set with random values here but other many properties have a _Random Between Two Constants/Curves_ option and you can use these to add variation in all sorts of ways. Varying the size and rotation helps to avoid the most obvious effects of particle repetition but you might also consider adding some randomness to the _Start Delay_, _Start Lifetime_ and _Start Speed_ properties. A small amount of variation helps to reinforce the impression of the explosion being a “natural” and unpredictable effect rather than a controlled mechanical process. Larger variations suggest a “dirty” explosion. For example, varying the _Start Delay_ will produce an explosion that is no longer sharp but bursts more slowly, perhaps because fuel tanks in a vehicle are being separately ignited. -->
 
