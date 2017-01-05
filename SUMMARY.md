@@ -71,6 +71,9 @@
         * [动画控制器资源](Manual/Animator.md)
         * [动画控制器视图](Manual/AnimatorWindow.md)
         * [动画状态机](Manual/AnimationStateMachines.md)
-* [用户界面](Manual/UISystem.md)
-    * [Canvas](Manual/UICanvas.md)
+* [用户界面 UI](Manual/UISystem.md)
+    * [画布 Canvas](Manual/UICanvas.md)
+    * [基本布局](Manual/UIBasicLayout.md)
+    * [视觉组件](Manual/UIVisualComponents.md)
+    * [交互组件](Manual/UIInteractionComponents.md)
 
