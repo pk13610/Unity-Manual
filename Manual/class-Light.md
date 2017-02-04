@@ -84,7 +84,7 @@
 
 <!-- **Render Mode** Importance of this light. This can affect lighting fidelity and performance, see _Performance Considerations_ below. The options are Auto (the rendering method is determined at runtime depending on the brightness of nearby lights and current [Quality Settings]), Important (the light is always rendered at per-pixel quality) and Not Important (the light is always rendered in a faster, vertex/object light mode). Use Important mode only for the most noticeable visual effects (eg, headlights of a player’s car). -->
 
-**Render Mode** 该灯光的重要性。可能会影响光照保真度和性能，请参阅下面的_性能注意事项_。可选值有 Auto（在运行时决定渲染模式，取决于附件灯关的亮度和当前的 [画质设置]），Important（该灯光始终以像素级别的质量渲染）和 Not Important（该灯管始终以更快的顶点光照模式渲染）。仅为最值得注意的视觉效果使用 Important 模式（例如，玩家所驾驶车辆的前灯）。
+**Render Mode** 该灯光的重要性。可能会影响光照保真度和性能，请参阅下面的_性能注意事项_。可选值有 Auto（在运行时决定渲染模式，取决于附件灯关的亮度和当前的 [画质设置]），Important（该灯光始终以像素级别的质量渲染）和 Not Important（该灯光始终以更快的顶点光照模式渲染）。仅为最值得注意的视觉效果使用 Important 模式（例如，玩家所驾驶车辆的前灯）。
 
 [Quality Settings]: https://docs.unity3d.com/Manual/class-QualitySettings.html
 [画质设置]: https://docs.unity3d.com/Manual/class-QualitySettings.html
@@ -112,7 +112,7 @@ Unity 中的所有 [内置着色器] 都可以和任意类型的灯光无缝协�
 
 <!-- All Lights can optionally cast [Shadows]. This is done by selecting either **Hard Shadows** or **Soft Shadows** for the **Shadow Type** property of each individual Light. For more information about shadows, please read the [Shadows] page. -->
 
-所有灯管可以选择性地投射 [阴影]。通过选择 **Shadow Type** 为 **Hard Shadows** 或 **Soft Shadows** 来完成。有关阴影的更多信息请阅读 [阴影] 页。
+所有灯光可以选择性地投射 [阴影]。通过选择 **Shadow Type** 为 **Hard Shadows** 或 **Soft Shadows** 来完成。有关阴影的更多信息请阅读 [阴影] 页。
 
 [Shadows]: https://docs.unity3d.com/Manual/ShadowOverview.html
 [阴影]: https://docs.unity3d.com/Manual/ShadowOverview.html
