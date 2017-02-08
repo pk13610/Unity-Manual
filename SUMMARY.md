@@ -12,6 +12,7 @@
                 * [使用灯光](Manual/UsingLights.md)
                 * [灯光纹理](Manual/Cookies.md)
             * [阴影](Manual/Shadows.md)
+                - [阴影](Manual/ShadowOverview.md)
             * [全局光照](Manual/GIIntro.md)
         * [材质、着色器、纹理](Manual/Shaders.md)
             * [创建和使用材质](Manual/Materials.md)
