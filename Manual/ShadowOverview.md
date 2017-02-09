@@ -143,7 +143,7 @@ Unity 的灯光可以将 **阴影** 从一个游戏对象投射到自身的其�
 
 <!-- The bias values for a Light may need tweaking to make sure that unwanted effects occur. It is generally easier to gauge the right value by eye rather than attempting to calculate it. -->
 
-为了避免发生这种意外效果，光源的阴影偏差可能需要调整。通常，通过眼睛来确定正确的偏差值更容易些，而不是尝试通过计算获得。
+为了避免发生这种意外效果，光源的阴影偏差可能需要调整。通常，通过眼睛来判定正确的偏差值更容易些，而不是尝试通过计算获得。
 
 <!-- To further prevent shadow acne we are using a technique known as **Shadow pancaking** (see [Directional light shadows: Shadow pancaking]). This generally works well, but can create visual artifacts for very large triangles. -->
 
@@ -154,7 +154,7 @@ Unity 的灯光可以将 **阴影** 从一个游戏对象投射到自身的其�
 
 ![A low Shadow near plane offset value create the appearance of holes in shadows](https://docs.unity3d.com/uploads/Main/ShadowNearOffsetTooLow.png)
 <!-- > A low **Shadow near plane offset** value create the appearance of holes in shadows -->
-> 设置较低的 **阴影近剪裁平面偏移 Shadow near plane offset** 值，创建阴影中的孔壮效果。
+> 设置较低的 **阴影近剪裁平面偏移 Shadow near plane offset** 值，导致阴影中的孔状效果。
 
 <!-- Tweak the **Shadow Near Plane Offset** property to troubleshoot this problem. Setting this value too high introduces shadow acne. -->
 
