@@ -21,7 +21,7 @@
 
 <!-- A camera in the real world, or indeed a human eye, sees the world in a way that makes objects look smaller the farther they are from the point of view. This well-known perspective effect is widely used in art and computer graphics and is important for creating a realistic scene. Naturally, Unity supports perspective cameras, but for some purposes, you want to render the view without this effect. For example, you might want to create a map or information display that is not supposed to appear exactly like a real-world object. A camera that does not diminish the size of objects with distance is referred to as _orthographic_ and Unity cameras also have an option for this. The perspective and orthographic modes of viewing a scene are known as camera _projections_. (scene above from [BITGEM]) -->
 
-真实世界中的摄像机或人眼，观察世界的方式是，离观察点越远，物体看起来越小。这种众所周知的透视效果被广泛应用于艺术和计算机图形，并且对于创建一个真实的场景至关重要。Unity 支持透视摄像机，不过出于某些目的，你可能希望渲染的视图不具有这种效果。例如，创建地图或信息显示时，它们看起来不应该像真实世界中的物体那样。不随距离缩小物体的大小的摄像机称为 _正交摄像机_，Unity 摄像机为此提供了一个选项。以透视模式和正交模式观察场景被称为摄像机 _投影_。
+真实世界中的摄像机或人眼，观察世界的方式是，离观察点越远，物体看起来越小。这种众所周知的透视效果被广泛应用于艺术和计算机图形，并且对于创建一个真实的场景至关重要。Unity 支持透视摄像机，不过出于某些目的，你可能希望渲染的视图不具有这种效果。例如，创建地图或信息显示时，它们看起来不应该像真实世界中的物体那样。不随距离缩小物体的大小的摄像机称为 _正交摄像机_，Unity 摄像机为此提供了一个选项。以透视模式和正交模式观察场景被称为摄像机 _投影_。（上面的场景来自 [BITGEM]）。
 
 [BITGEM]: https://www.assetstore.unity3d.com/en/#!/publisher/1299
 
