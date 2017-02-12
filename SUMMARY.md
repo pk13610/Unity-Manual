@@ -14,6 +14,7 @@
             * [阴影](Manual/Shadows.md)
                 - [阴影](Manual/ShadowOverview.md)
             * [全局光照](Manual/GIIntro.md)
+        * [摄像机](Manual/CamerasOverview.md)
         * [材质、着色器、纹理](Manual/Shaders.md)
             * [创建和使用材质](Manual/Materials.md)
             * [标准着色器](Manual/shader-StandardShader.md)
