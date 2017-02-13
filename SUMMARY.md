@@ -38,7 +38,7 @@
             * [粒子系统入门](Manual/ParticleSystemHowTo.md)
                 * [简单的爆炸](Manual/PartSysExplosion.md)
                 * [载具尾气](Manual/PartSysExhaust.md)
-        * [图像效果概述](Manual/ImageEffectsOverview.md)
+        * [屏幕特效概述](Manual/ImageEffectsOverview.md)
         * [图层](Manual/Layers.md)
 * [物理系统](Manual/PhysicsSection.md)
     * [物理系统概述](Manual/PhysicsOverview.md)
