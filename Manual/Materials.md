@@ -14,13 +14,13 @@
 ![](http://docs.unity3d.com/uploads/Main/StandardShaderNewEmptyMaterial.png)
 
 <!-- Once the Material has been created, you can apply it to an object and tweak all of its properties in the **Inspector**. To apply it to an object, just drag it from the **Project View** to any object in the **Scene** or **Hierarchy**. -->
-一旦材质被创建，你就可以把它应用到一个对象，并且在 **检视试图** 中修改它的所有属性。想把材质应用到一个对象上，只需要把材质从 **项目视图** 拖动到 **场景是图** 或 **层级视图** 中的任意对象上。
+一旦材质被创建，你就可以把它应用到一个对象，并且在 **检视视图** 中修改它的所有属性。想把材质应用到一个对象上，只需要把材质从 **项目视图** 拖动到 **场景是图** 或 **层级视图** 中的任意对象上。
 
 <!-- ## Setting Material Properties -->
 ## 设置材质属性
 
 <!-- You can select which Shader you want any particular Material to use. Simply expand the **Shader** drop-down in the Inspector, and choose your new Shader. The Shader you choose will dictate the available properties to change. The properties can be colors, sliders, textures, numbers, or vectors. If you have applied the Material to an active object in the **Scene**, you will see your property changes applied to the object in real-time. -->
-你可以为材质选择任意着色器。操作非常简单，在检视试图中展开 **着色器** 下单框，选择一个新着色器。所选择的着色器决定了可改变的有效属性。属性可以是颜色、滑动器、数值或向量。如果你已经把材质应用到了 **场景视图** 中的某个激活对象上，那么，改变属性会实时应用到该对象上。
+你可以为材质选择任意着色器。操作非常简单，在检视视图中展开 **着色器** 下单框，选择一个新着色器。所选择的着色器决定了可改变的有效属性。属性可以是颜色、滑动器、数值或向量。如果你已经把材质应用到了 **场景视图** 中的某个激活对象上，那么，改变属性会实时应用到该对象上。
 
 <!-- There are two ways to apply a **Texture** to a property. -->
 把纹理应用到某个属性有两种方式：
@@ -29,7 +29,7 @@
 * Drag it from the Project View on top of the Texture square
 * Click the **Select** button, and choose the texture from the drop-down list that appears
  -->
-* 从项目视图拖动纹理资源到检视试图的纹理插槽上。
+* 从项目视图拖动纹理资源到检视视图的纹理插槽上。
 * 点击 **选择** 按钮，从弹出的下拉列表中选择纹理资源。
 
 <!-- ## Built-in Shaders -->
@@ -65,7 +65,7 @@
 ## 着色器技术细节
 
 <!-- A Shader is a script which contains mathematical calculations and algorithms for how the pixels on the surface of a model should look. The standard shader performs complex and realistic lighting calculations. Other shaders may use simpler or different calculations to show different results. Within any given Shader are a number of properties which can be given values by a Material using that shader. These properties can be numbers, colours definitions or textures, which appear in the inspector when viewing a Material. Materials are then used by Renderer components attached to Game Objects, to render each Game Object’s mesh. -->
-着色器是一段包含了数学计算和算法的脚本，用于决定模型表层的外观。标准着色器会执行复杂而逼真的光照计算。其他着色器可能采用简化或不同的计算方式，从而现实不同的结果。任意一个着色器都带有一组可改变的属性。这些属性可能是数值、颜色或纹理，当你查看材质时，属性会显示在检视试图中。材质由绑定到游戏对象的 Renderer 组件所使用，用于渲染游戏对象的网格。
+着色器是一段包含了数学计算和算法的脚本，用于决定模型表层的外观。标准着色器会执行复杂而逼真的光照计算。其他着色器可能采用简化或不同的计算方式，从而现实不同的结果。任意一个着色器都带有一组可改变的属性。这些属性可能是数值、颜色或纹理，当你查看材质时，属性会显示在检视视图中。材质由绑定到游戏对象的 Renderer 组件所使用，用于渲染游戏对象的网格。
 
 <!-- It is possible and often desirable to have several different Materials which may reference the same textures. These materials may also use the same or different shaders, depending on the requirements. -->
 多个不同的材质可以引用同一个纹理。这些材质可以使用相同或不同的着色器，完全取决于需求。
@@ -109,7 +109,7 @@
 * The parameters that can be customised in the material inspector, such as texture maps, colours and numeric values.
  -->
 * 渲染游戏对象的方法。包括代码和数学计算，数学计算包括光源角度、视角和其他所有相关的计算。着色器也可以基于终端用户的图形硬件采取不同的方式。
-* 在材质检视试图中可以自定义参数，例如纹理映射、色彩和数值。
+* 在材质检视视图中可以自定义参数，例如纹理映射、色彩和数值。
 
 <!-- A Material defines: -->
 一个材质定义了：

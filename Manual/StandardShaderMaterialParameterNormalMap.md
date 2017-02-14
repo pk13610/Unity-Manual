@@ -8,7 +8,7 @@
 ![](http://docs.unity3d.com/uploads/Main/StandardShaderParameterNormalMap.png)
 
 <!-- Normal maps are a type of **Bump Map**. They are a special kind of texture that allow you to add surface detail such as bumps, grooves, and scratches to a model which catch the light as if they are represented by real geometry. -->
-法线贴图是**凹凸贴图**的一种。凹凸贴图是一种特殊的纹理，允许为模型添加表面细节，例如凸起、凹槽和划痕光，这些细节将捕获光线，就像真实的几何体一样。
+法线贴图是 **凹凸贴图** 的一种。凹凸贴图是一种特殊的纹理，允许为模型添加表面细节，例如凸起、凹槽和划痕光，这些细节将捕获光线，就像真实的几何体一样。
 
 <!-- For example, you might want to show a surface which has grooves and screws or rivets across the surface, like an aircraft hull. One way to do this would be to model these details as geometry, as shown below. -->
 举个例子，你可能想要显示一个具有凹槽、螺丝钉或铆钉的表面，例如飞机机身。一种实现方式是为这些细节进行几何建模，如下所示。
@@ -34,13 +34,13 @@
 # 如何创建和使用凹凸贴图
 
 <!-- Bump mapping is a relatively old graphics technique, but is still one of the core methods required to create detailed realistic realtime graphics. Bump Maps are also commonly referred to as **Normal Maps** or **Height Maps**, however these terms have slightly different meanings which will be explained below. -->
-凹凸贴图是一种相对古老的图形技术，但仍然是创建细节逼真的实时图形所需的核心方法之一。凹凸贴图通常也被称为**法线题图**或**高度图**，不过这些术语的含义略有不同，将会在下面解释。
+凹凸贴图是一种相对古老的图形技术，但仍然是创建细节逼真的实时图形所需的核心方法之一。凹凸贴图通常也被称为 **法线题图** 或 **高度图**，不过这些术语的含义略有不同，将会在下面解释。
 
 <!-- ## What are Surface Normals? -->
 ## 什么是表面法线？
 
 <!-- To really explain how normal mapping works, we will first describe what a **“normal”** is, and how it is used in realtime lighting. Perhaps the most basic example would be a model where each surface polygon is lit simply according to the surface angles relative to the light. The surface angle can be represented as a line protruding in a perpendicular direction from the surface, and this direction (which is a vector) relative to the surface is called a **“surface normal”**, or simply, a **normal**. -->
-为了真正理解法线贴图的工作原理，需要先清楚什么是**法线**，以及如何在实时光照中使用法线。也许最基本的例子是，一个模型的多边形表面根据表面相对于光线的角度简单地被点亮。表面角度可以表示为一条垂直于表面并向上突出的线，是一个向量，这条线成为**表面法线**，或者简单地称为**法线**。
+为了真正理解法线贴图的工作原理，需要先清楚什么是 **法线**，以及如何在实时光照中使用法线。也许最基本的例子是，一个模型的多边形表面根据表面相对于光线的角度简单地被点亮。表面角度可以表示为一条垂直于表面并向上突出的线，是一个向量，这条线成为 **表面法线**，或者简单地称为 **法线**。
 
 ![Two 12-sided cylinders, on the left with flat shading, and on the right with smoothed shading](http://docs.unity3d.com/uploads/Main/BumpMap2Cylinders.png)
 <!-- > Two 12-sided cylinders, on the left with flat shading, and on the right with smoothed shading -->
@@ -102,7 +102,7 @@
 > 一个法线贴图示例。
 
 <!-- This is a simple normal map, containing the bump information for some raised rectangles and text. This normal map can be imported into Unity and placed into Normal Map slot of the Standard Shader. When combined in a material with a colour map (the Albedo map) and applied to the surface of of the cylinder mesh above, the result looks like this: -->
-这是一张简单的法线贴图，包含了一些矩形和文本的凹凸信息。这张发现贴图可以导入 Unity，并放入标准着色起的法线贴图插槽。把把它和颜色贴图（即漫反射贴图）一起应用在圆柱体网格的表面上时，效果如下所示：
+这是一张简单的法线贴图，包含了一些矩形和文本的凹凸信息。这张发现贴图可以导入 Unity，并放入标准着色器的法线贴图插槽。把把它和颜色贴图（即漫反射贴图）一起应用在圆柱体网格的表面上时，效果如下所示：
 
 ![The example normal map applied to the surface of the cylinder mesh used above](http://docs.unity3d.com/uploads/Main/BumpMapLitExample.png)
 <!-- > The example normal map applied to the surface of the cylinder mesh used above -->
@@ -213,7 +213,7 @@ Assets 文件夹中有了法线贴图后，就可以在检视视图中把它放�
 
 ![Placing a normal map texture into the correct slot in a material using the Standard Shader](http://docs.unity3d.com/uploads/Main/BumpMapPutIntoShader.png)
 <!-- > Placing a normal map texture into the correct slot in a material using the Standard Shader -->
-> 把一张法线法线贴图放入标准着色起材质的正确插槽中。
+> 把一张法线法线贴图放入标准着色器材质的正确插槽中。
 
 <!-- If you imported a normalmap or heightmap, and did not mark it as a normal map (By selecting **Texture Type: Normal Map** as described above), the Material inspector will warn you about this and offer to fix it, as so: -->
 如果导入了一张法线贴图或高度图，但是没有把它标记为法线贴图（选择**纹理类型：法线贴图**），材质的检视视图将提醒你修正它，像这样：
@@ -229,4 +229,4 @@ Assets 文件夹中有了法线贴图后，就可以在检视视图中把它放�
 ## 辅助法线贴图
 
 <!-- You may also notice that there is a second Normal Map slot further down in the Material inspector for the Standard Shader. This allows you to use an additional normal map for creating extra detail. You can add a normal map into this slot in the same way as the regular normal map slot, but the intention here is that you should use a different scale or frequency of tiling so that the two normal maps together produce a high level of detail at different scales. For example, your regular normal map could define the details of panelling on a wall or vehicle, with groves for the panel edges. A secondary normal map could provide very fine bump detail for scratches and wear on the surface which may be tiled at 5 to 10 times the scale of the base normal map. These details could be so fine as to only be visible when examined closely. To have this amount of detail on the base normal map would require the base normal map to be incredibly large, however by combining two at different scales, a high overall level of detail can be achieved with two relatively small normal map textures. -->
-你可能还注意到，在标准着色起材质的底部有一个辅助法线贴图插槽。它允许你再使用一张法线贴图来创建额外的细节。你可以把一张法线贴图添加到这个插槽中，就像常规法线贴图的插槽一样，但是，你应该使用不同的尺寸或平铺频率，这样，两张法线贴图在不同的尺度上，共同产生高级细节。例如，常规法线贴图可以定义墙壁或车辆上的镶板细节和镶板边缘的凹槽。辅助贴图可以为表面上划痕和磨损提供非常精细的凸起细节，平铺次数可能是基础法线贴图的 5 到 10 倍。这些细节可能非常惊喜，只有贴脸检查才能看到。为了在基础法线贴图上达到这个量级的细节，基础法线贴图需要非常大才行，尽管如此，通过两张不同尺寸但相对较小的法线贴图，可是实现高级细节。
+你可能还注意到，在标准着色器材质的底部有一个辅助法线贴图插槽。它允许你再使用一张法线贴图来创建额外的细节。你可以把一张法线贴图添加到这个插槽中，就像常规法线贴图的插槽一样，但是，你应该使用不同的尺寸或平铺频率，这样，两张法线贴图在不同的尺度上，共同产生高级细节。例如，常规法线贴图可以定义墙壁或车辆上的镶板细节和镶板边缘的凹槽。辅助贴图可以为表面上划痕和磨损提供非常精细的凸起细节，平铺次数可能是基础法线贴图的 5 到 10 倍。这些细节可能非常惊喜，只有贴脸检查才能看到。为了在基础法线贴图上达到这个量级的细节，基础法线贴图需要非常大才行，尽管如此，通过两张不同尺寸但相对较小的法线贴图，可是实现高级细节。

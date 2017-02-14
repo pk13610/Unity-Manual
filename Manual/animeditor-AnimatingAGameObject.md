@@ -26,7 +26,7 @@
 **Tranform** 组件的属性有些特别，属性 **.x**、**.y** 和 **.z** 是连接在一起的，所以一次会添加 3 条曲线。
 
 <!-- You can also add animatable properties to the current GameObject (and its children) by clicking the **Add Property** button. Clicking this button shows a pop up list of the GameObject’s animatable properties. These correspond with the properties you can see listed in the inspector. -->
-你也可以点击 **添加属性按钮**，为当前游戏对象（和它的子对象）添加动画属性。点击这个按钮，将弹出一个浮层，现实该游戏对象上所有支持动画的属性。这些属性与检视试图中列出的属性一一对应。
+你也可以点击 **添加属性按钮**，为当前游戏对象（和它的子对象）添加动画属性。点击这个按钮，将弹出一个浮层，现实该游戏对象上所有支持动画的属性。这些属性与检视视图中列出的属性一一对应。
 
 ![The animatable properties of a GameObject are revealed when you click the Add Property button](https://docs.unity3d.com/uploads/Main/AnimationEditorMatchesInspector.png)
 <!-- > The animatable properties of a GameObject are revealed when you click the **Add Property** button -->

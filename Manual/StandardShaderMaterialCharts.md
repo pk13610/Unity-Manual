@@ -83,4 +83,5 @@
 > 译注：从前面的文档看，镜面模式使用起来不够友好，就不翻译了。
 
 <!-- There are also hints on how to make realistic materials in these charts. In essence it is about choosing a workflow (default or metallic) and obtaining relevant values for your maps or colour pickers. For instance, if we wanted to make shiny white plastic, we would want a white Albedo. Since it is not a metal we would want a dark Specular (or a very low Metallic value) and finally a very high Smoothness. -->
+
 在这些图表中的，还有一些如何创建真实材料的提示。本质上，是选择一个工作流程（金属模式或镜面模式），然后为纹理或颜色选择器设置相应的值。举个例子，如果想要制作闪亮的白色塑料，我们需要设置漫反射为白色。因为它不是金属，我们需要一个非常低的 Metallic 值（或深色的 Specular），和一个非常高的平滑度。
