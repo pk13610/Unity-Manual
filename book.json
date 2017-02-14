@@ -1,6 +1,6 @@
 {
 	"title": "Unity 5.5 手册（中文版）",
-	"plugins": ["-fontsettings", "expandable-chapters"],
+	"plugins": ["-fontsettings", "expandable-chapters", "-rss"],
 	"pluginsConfig": {
 		"rss": {
 			"title": "Unity 5.5 手册（中文版）",
