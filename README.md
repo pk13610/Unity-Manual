@@ -1,7 +1,7 @@
 # Unity 5.5 手册（中文版）
 
-<https://nuysoft.gitbooks.io/unity-manual/content/>
+[原作者](https://github.com/nuysoft/Unity-Manual)
 
-<https://github.com/nuysoft/Unity-Manual>
+貌似缺好多
 
-<img alt="Scan me!" src="./qrcode.png">
+
